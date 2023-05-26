@@ -1,1 +1,14 @@
-<h3>Đây là home component</h3>
+
+<div ><select id="city" class="form-select w-auto d-inline" aria-label="Default select example" (change)="changeCity($event)">
+    <option selected>Tỉnh/Thành Phố</option>
+    <option *ngFor="let city of cities" [value]="city.Name">{{ city.Name }}</option>
+  </select>
+  <select id="city" class="form-select w-auto d-inline" aria-label="Default select example "(change)="changeDisc($event)">
+    <option selected>Quận/Huyện</option>
+    <option *ngFor="let disc of Discs" [value]="disc.Name">{{ disc.Name }}</option>
+  </select>
+  <select id="city" class="form-select w-auto d-inline  " aria-label="Default select example " (change)="changeWards($event)">
+    <option selected>Xã</option>
+    <option *ngFor="let w of ward" [value]="w.Name">{{ w.Name }}</option>
+  </select>
+</div>  
