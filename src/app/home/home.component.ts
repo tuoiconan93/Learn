@@ -7,13 +7,13 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  constructor(private http: HttpClient) { }
   public Discs: any[]=[];
   public cities: any[]=[];
   public ward: any[]=[];
 
-  constructor(private http: HttpClient) { }
   public ngOnInit(): void {
-    this.http.get('assets/data.json').subscribe((data:any) => {
+    this.http.get('assets/db/data.json').subscribe((data:any) => {
       this.cities=data;
     });
   }

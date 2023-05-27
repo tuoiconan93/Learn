@@ -1,0 +1,2389 @@
+{
+  "Sheet1": [
+    {
+      "No": 1,
+      "Name": "Alarm Office Hall Y",
+      "Cost": 116371000,
+      "Invoice No": 19846,
+      "Date": "23/04/2018"
+    },
+    {
+      "No": 2,
+      "Name": "Export Section Hall Y",
+      "Cost": 54660400,
+      "Invoice No": "19844, 19845",
+      "Date": "23/04/2018"
+    },
+    {
+      "No": 3,
+      "Name": "Export Section Hall Y",
+      "Cost": 6183100,
+      "Invoice No": 19841,
+      "Date": "23/04/2018"
+    },
+    {
+      "No": 4,
+      "Name": "Network Design",
+      "Invoice No": 19837,
+      "Date": "23/04/2018"
+    },
+    {
+      "No": 5,
+      "Name": "Network HR & Design",
+      "Cost": 38290000,
+      "Invoice No": 19835,
+      "Date": "23/04/2018"
+    },
+    {
+      "No": 6,
+      "Name": "Network Design",
+      "Cost": 8260000,
+      "Invoice No": 19835,
+      "Date": "23/04/2018"
+    },
+    {
+      "No": 7,
+      "Name": "Fee Alarm System G",
+      "Cost": 10000000,
+      "Invoice No": 19828,
+      "Date": "23/04/2018"
+    },
+    {
+      "No": 8,
+      "Name": "Fee Alarm System Design",
+      "Cost": 10000000,
+      "Invoice No": 19828,
+      "Date": "23/04/2018"
+    },
+    {
+      "No": 9,
+      "Name": "Fee Alarm System A",
+      "Cost": 10000000,
+      "Invoice No": 19828,
+      "Date": "23/04/2018"
+    },
+    {
+      "No": 10,
+      "Name": "Fee Alarm System E",
+      "Cost": 10000000,
+      "Invoice No": 19828,
+      "Date": "23/04/2018"
+    },
+    {
+      "No": 11,
+      "Name": "Fee Alarm System B",
+      "Cost": 10000000,
+      "Invoice No": 19828,
+      "Date": "23/04/2018"
+    },
+    {
+      "No": 12,
+      "Name": "Network Design",
+      "Cost": 3681500,
+      "Invoice No": 22952,
+      "Date": "16/05/2018"
+    },
+    {
+      "No": 13,
+      "Name": "Project X Network",
+      "Cost": 806147000,
+      "Invoice No": "1699, 1700, 1702, 1703, 1704, 1705",
+      "__EMPTY": "Already pay 50%"
+    },
+    {
+      "No": 14,
+      "Name": "Project X Alarm",
+      "Cost": 960941000,
+      "Invoice No": "25788, 25789",
+      "Date": "26/03/2019",
+      "__EMPTY": "Already pay 50%"
+    },
+    {
+      "No": 15,
+      "Name": "7 Servers for Quang Ngai",
+      "Cost": 1215505000,
+      "Invoice No": 3991,
+      "Date": "16/10/2018",
+      "__EMPTY": "Already pay 50%"
+    },
+    {
+      "No": 16,
+      "Name": "Network G, F",
+      "Cost": 61060000
+    },
+    {
+      "No": 17,
+      "Name": "Repair optical cable",
+      "Cost": 4200000,
+      "Invoice No": 35035,
+      "Date": 43412
+    },
+    {
+      "No": 18,
+      "Name": "Repair fire alarm system",
+      "Cost": 17990000,
+      "Invoice No": 35035,
+      "Date": 43412
+    },
+    {
+      "No": 19,
+      "Name": "Network warehouse E",
+      "Cost": 3655000,
+      "Invoice No": 35036,
+      "Date": 43412
+    },
+    {
+      "No": 20,
+      "Name": "Phone Hall X",
+      "Cost": 40240000,
+      "Invoice No": "1697, 1698",
+      "Date": "28/09/2018"
+    },
+    {
+      "No": 21,
+      "Name": "Repair optical cable A",
+      "Cost": 9500000,
+      "Invoice No": 1767,
+      "Date": "28/09/2018"
+    },
+    {
+      "No": 22,
+      "Name": "Repair network export E",
+      "Cost": 11830000,
+      "Invoice No": 1767,
+      "Date": "28/09/2018"
+    },
+    {
+      "No": 23,
+      "Name": "Repair fire alarm system D",
+      "Cost": 187233000,
+      "Invoice No": 19141,
+      "Date": "29/01/2019"
+    },
+    {
+      "No": 24,
+      "Name": "Network G",
+      "Cost": 3946000,
+      "Invoice No": 6659,
+      "Date": 43142
+    },
+    {
+      "No": 25,
+      "Name": "Network F",
+      "Cost": 1494000,
+      "Invoice No": 6659,
+      "Date": 43142
+    },
+    {
+      "No": 26,
+      "Name": "Network X",
+      "Cost": 979000,
+      "Invoice No": 6657,
+      "Date": 43142
+    },
+    {
+      "No": 27,
+      "Name": "Repair  fire alarm system D",
+      "Cost": 150540000,
+      "Invoice No": 19873,
+      "Date": "13/02/2019"
+    },
+    {
+      "No": 28,
+      "Name": "Repair fire alarm system A",
+      "Cost": 138500000,
+      "Invoice No": 12726,
+      "Date": "14/12/2018"
+    },
+    {
+      "No": 29,
+      "Name": "Repair fire alarm system A",
+      "Cost": 62830000,
+      "Invoice No": 8326,
+      "Date": "14/11/2018"
+    },
+    {
+      "No": 30,
+      "Name": "Repair optical cable A",
+      "Cost": 1116000,
+      "Invoice No": 8326,
+      "Date": "14/11/2018"
+    },
+    {
+      "No": 31,
+      "Name": "Optical Hall A broken",
+      "Cost": 15188000,
+      "Invoice No": 11380,
+      "Date": 43202
+    },
+    {
+      "No": 32,
+      "Name": "Repair and Upgrade A",
+      "Cost": 72380000,
+      "Invoice No": 29151,
+      "Date": "19/04/2019",
+      "__EMPTY": "20182411-33PL"
+    },
+    {
+      "No": 33,
+      "Name": "Repair and Upgrade B",
+      "Cost": 39880000,
+      "Invoice No": 29115,
+      "Date": "19/04/2019",
+      "__EMPTY": "20190104-04PL"
+    },
+    {
+      "No": 34,
+      "Name": "Time Card",
+      "Cost": 1675000,
+      "Invoice No": 19140,
+      "Date": "29/01/2019",
+      "__EMPTY": "20190104-04PL"
+    },
+    {
+      "No": 35,
+      "Name": "Alarm Office Hall Y",
+      "Cost": 3120000,
+      "Invoice No": 19143,
+      "Date": "29/01/2019",
+      "__EMPTY": "20190108-03QNIPL"
+    },
+    {
+      "No": 36,
+      "Name": "Move Optical Cable",
+      "Cost": 26490200,
+      "Invoice No": 19924,
+      "Date": "13/02/2019",
+      "__EMPTY": "2090108-07PL"
+    },
+    {
+      "No": 37,
+      "Name": "Move IP Phone",
+      "Cost": 4554000,
+      "Invoice No": 19873,
+      "Date": "13/02/2019",
+      "__EMPTY": "2090108-07PL"
+    },
+    {
+      "No": 38,
+      "Name": "Service fee alarm Y",
+      "Cost": 32000000,
+      "Invoice No": 26264,
+      "Date": "28/03/2019",
+      "__EMPTY": "20190315-03QNIPL"
+    },
+    {
+      "No": 39,
+      "Name": "Service fee alarm X",
+      "Cost": 15000000,
+      "Invoice No": 26264,
+      "Date": "28/03/2019",
+      "__EMPTY": "20190315-03QNIPL"
+    },
+    {
+      "No": 40,
+      "Name": "Repair optical cable A-C",
+      "Cost": 16460000,
+      "Invoice No": 29144,
+      "Date": "19/04/2019",
+      "__EMPTY": "20190401-01PL"
+    },
+    {
+      "No": 41,
+      "Name": "Repair and Upgrade A",
+      "Cost": 11420000,
+      "Invoice No": 29144,
+      "Date": "19/04/2019",
+      "__EMPTY": "20190401-01PL"
+    },
+    {
+      "No": 42,
+      "Name": "Repair and Upgrade B",
+      "Cost": 11985000,
+      "Invoice No": 29176,
+      "Date": "19/04/2019",
+      "__EMPTY": "20190401-01PL"
+    },
+    {
+      "No": 43,
+      "Name": "Network D",
+      "Cost": 105968000,
+      "Invoice No": "33354;33355",
+      "Date": "27/05/2019",
+      "__EMPTY": "20190403-05PL"
+    },
+    {
+      "No": 44,
+      "Name": "Repair and Upgrade B",
+      "Cost": 16000000,
+      "Invoice No": 29176,
+      "Date": "19/04/2019",
+      "__EMPTY": "20190404-06PL"
+    },
+    {
+      "No": 45,
+      "Name": "Repair fire alarm E",
+      "Cost": 45600000,
+      "Invoice No": 29176,
+      "Date": "19/04/2019",
+      "__EMPTY": "20190408-08PL"
+    },
+    {
+      "No": 46,
+      "Name": "Power Extention",
+      "Cost": 1000000,
+      "Invoice No": 29176,
+      "Date": "19/04/2019",
+      "__EMPTY": "20190409-09PL"
+    },
+    {
+      "No": 47,
+      "Name": "Network F IT",
+      "Cost": 8910000,
+      "Invoice No": 33378,
+      "Date": "27/05/2019",
+      "__EMPTY": "20190419-16PL"
+    },
+    {
+      "No": 48,
+      "Name": "Telephone Security E",
+      "Cost": 22329000,
+      "Invoice No": "37522;37524",
+      "Date": "29/06/2019;29/06/2019",
+      "__EMPTY": "20190507-05PL"
+    },
+    {
+      "No": 49,
+      "Name": "Telephone F",
+      "Cost": 1327000,
+      "Invoice No": 33379,
+      "Date": "27/05/2019",
+      "__EMPTY": "20190509-07PL"
+    },
+    {
+      "No": 50,
+      "Name": "Export Section Hall Y",
+      "Cost": 5115000,
+      "Invoice No": 33345,
+      "Date": "27/05/2019",
+      "__EMPTY": "20190509-03QNIPL"
+    },
+    {
+      "No": 51,
+      "Name": "Netowork D",
+      "Cost": 37094000,
+      "Invoice No": "33375;33376",
+      "Date": "27/05/2019",
+      "__EMPTY": "20190509-07PL"
+    },
+    {
+      "No": 52,
+      "Name": "Alarm Warehouse A",
+      "Cost": 40415000,
+      "Invoice No": 37525,
+      "Date": "29/06/2019",
+      "__EMPTY": "20190527-17PL "
+    },
+    {
+      "No": 53,
+      "Name": "Alarm Warehouse B",
+      "Cost": 45545000,
+      "Invoice No": 37520,
+      "Date": "29/06/2019",
+      "__EMPTY": "20190527-17PL "
+    },
+    {
+      "No": 54,
+      "Name": "Alarm D - CNC",
+      "Cost": 5670000,
+      "Invoice No": 37521,
+      "Date": "29/06/2019",
+      "__EMPTY": "20190527-17PL "
+    },
+    {
+      "No": 55,
+      "Name": "Telephone E",
+      "Cost": 1505000,
+      "Invoice No": 37521,
+      "Date": "29/06/2019",
+      "__EMPTY": "20190527-17PL "
+    },
+    {
+      "No": 56,
+      "Name": "Machine Hall D",
+      "Cost": 3806000,
+      "Invoice No": 37525,
+      "Date": "29/06/2019",
+      "__EMPTY": "20190611-07PL "
+    },
+    {
+      "No": 57,
+      "Name": "Alarm Warehouse B",
+      "Cost": 12400000
+    },
+    {
+      "No": 58,
+      "Name": "Alarm G",
+      "Cost": 35630000,
+      "Invoice No": 40525,
+      "Date": "26/07/2019",
+      "__EMPTY": "20190708-06PL"
+    },
+    {
+      "No": 59,
+      "Name": "Network Laser Z",
+      "Cost": 10987000,
+      "Invoice No": 43414,
+      "Date": "20/08/2019",
+      "__EMPTY": "20190807-04NIPL"
+    },
+    {
+      "No": 60,
+      "Name": "Repair optical cable A",
+      "Cost": 1000000,
+      "Invoice No": 49587,
+      "Date": 43687,
+      "__EMPTY": "20190815-08PL"
+    },
+    {
+      "No": 61,
+      "Name": "Repair optical cable A - B",
+      "Cost": 58020000,
+      "Invoice No": 49587,
+      "Date": 43687,
+      "__EMPTY": "20190822-12PL"
+    },
+    {
+      "No": 62,
+      "Name": "New network Hall E",
+      "Cost": 13525000,
+      "__EMPTY": "20190909-02PL",
+      "__EMPTY_1": "replaced"
+    },
+    {
+      "No": 63,
+      "Name": "Network ER-18",
+      "Cost": 16128000,
+      "Invoice No": "91,92",
+      "Date": 43779,
+      "__EMPTY": "20190930-14 PL"
+    },
+    {
+      "No": 64,
+      "Name": "Network G",
+      "Cost": 3629000,
+      "Invoice No": 80,
+      "Date": 43779,
+      "__EMPTY": "20190930-14 PL"
+    },
+    {
+      "No": 65,
+      "Name": "Network ER14-17",
+      "Cost": 26982000,
+      "Invoice No": "77,78",
+      "Date": 43779,
+      "__EMPTY": "20190930-14 PL"
+    },
+    {
+      "No": 66,
+      "Name": "Repair Network Accounting Office",
+      "Cost": 11603000,
+      "Invoice No": 4558,
+      "Date": "21/11/2019",
+      "__EMPTY": "20191107-05PL "
+    },
+    {
+      "No": 67,
+      "Name": "Repair Network Hall C Office",
+      "Cost": 11668000,
+      "Invoice No": 4559,
+      "Date": "21/11/2019",
+      "__EMPTY": "20191107-05PL "
+    },
+    {
+      "No": 68,
+      "Name": "Network Hall E - Export",
+      "Cost": 2534000,
+      "Invoice No": 4560,
+      "Date": "21/11/2019",
+      "__EMPTY": "20191107-05PL "
+    },
+    {
+      "No": 69,
+      "Name": "Network Hall G - Laser",
+      "Cost": 6216000,
+      "Invoice No": 4561,
+      "Date": "21/11/2019",
+      "__EMPTY": "20191107-05PL "
+    },
+    {
+      "No": 70,
+      "Name": "Network Hall G - GO01",
+      "Cost": 5128000,
+      "Invoice No": 4563,
+      "Date": "21/11/2019",
+      "__EMPTY": "20191107-05PL "
+    },
+    {
+      "No": 71,
+      "Name": "Network Hall G - GO05",
+      "Cost": 4991000,
+      "Invoice No": 4564,
+      "Date": "21/11/2019",
+      "__EMPTY": "20191107-05PL "
+    },
+    {
+      "No": 72,
+      "Name": "Alarm Hall X",
+      "Cost": 15440000,
+      "Invoice No": 5612,
+      "Date": "30/11/2019",
+      "__EMPTY": "20191114-04QNPL"
+    },
+    {
+      "No": 73,
+      "Name": "Export Section Hall Y",
+      "Cost": 11090000,
+      "Invoice No": 5608,
+      "Date": "30/11/2019",
+      "__EMPTY": "20191114-04QNPL"
+    },
+    {
+      "No": 74,
+      "Name": "Looms machine Hall F Optical",
+      "Cost": 86784000,
+      "Invoice No": 10768,
+      "Date": "18/01/2020",
+      "__EMPTY": "20191204 -03PL"
+    },
+    {
+      "No": 75,
+      "Name": "Repair Optical Cable from 1 to 2",
+      "Cost": 28122000,
+      "Invoice No": 10769,
+      "Date": "18/01/2020",
+      "__EMPTY": "20191225-14PL"
+    },
+    {
+      "No": 76,
+      "Name": "Repair Optical Cable Hall A",
+      "Cost": 5400000,
+      "Invoice No": 10770,
+      "Date": "18/01/2020",
+      "__EMPTY": "20200103-01PL"
+    },
+    {
+      "No": 77,
+      "Name": "Looms machine Hall F",
+      "Cost": 25306500,
+      "Invoice No": 10771,
+      "Date": "18/01/2020",
+      "__EMPTY": "20200107-05PL"
+    },
+    {
+      "No": 78,
+      "Name": "Design company in Looms office",
+      "Cost": 9188000,
+      "Invoice No": 10762,
+      "Date": "18/01/2020",
+      "__EMPTY": "20200107-06PL"
+    },
+    {
+      "No": 79,
+      "Name": "Repair Alarm System Hall A",
+      "Cost": 102690000,
+      "Invoice No": 13319,
+      "Date": "20/02/2020",
+      "__EMPTY": "20200117 -14PL"
+    },
+    {
+      "No": 80,
+      "Name": "Repair Alarm System Hall E",
+      "Cost": 132580000,
+      "Invoice No": 13322,
+      "Date": "20/02/2020",
+      "__EMPTY": "20200117 -14PL"
+    },
+    {
+      "No": 81,
+      "Name": "Optical Hall E broken",
+      "Cost": 2600000,
+      "Invoice No": 13324,
+      "Date": "20/02/2020",
+      "__EMPTY": "20200117 -14PL"
+    },
+    {
+      "No": 82,
+      "Name": "WIFI B",
+      "Cost": 992000,
+      "Invoice No": 13015,
+      "Date": "18/02/2020",
+      "__EMPTY": "20200117 -14PL"
+    },
+    {
+      "No": 83,
+      "Name": "Network H",
+      "Cost": 1647000,
+      "Invoice No": 13006,
+      "Date": "18/02/2020",
+      "__EMPTY": "20200117 -14PL"
+    },
+    {
+      "No": 84,
+      "Name": "Alarm X",
+      "Cost": 12500000,
+      "Invoice No": 13318,
+      "Date": "20/02/2020",
+      "__EMPTY": "2020203-01QNPL"
+    },
+    {
+      "No": 85,
+      "Name": "Alarm Medical Warehouse C",
+      "Cost": 3500000,
+      "Invoice No": 16944,
+      "Date": "28/03/2020",
+      "__EMPTY": "20200302-01PL"
+    },
+    {
+      "No": 86,
+      "Name": "Network Medical Warehouse C",
+      "Cost": 2808000,
+      "Invoice No": 16944,
+      "Date": "28/03/2020",
+      "__EMPTY": "20200302-01PL"
+    },
+    {
+      "No": 87,
+      "Name": "Network warehouse B",
+      "Cost": 7519000,
+      "Invoice No": "16944;16945",
+      "Date": "28/03/2020;23/03/2020",
+      "__EMPTY": "20200302-01PL"
+    },
+    {
+      "No": 88,
+      "Name": "Network HR E",
+      "Cost": 4365000,
+      "Invoice No": 16945,
+      "Date": "28/03/2020",
+      "__EMPTY": "20200302-01PL"
+    },
+    {
+      "No": 89,
+      "Name": "Network H",
+      "Cost": 8416000,
+      "Invoice No": 16946,
+      "Date": "28/03/2020",
+      "__EMPTY": "20200302-01PL"
+    },
+    {
+      "No": 90,
+      "Name": "WIFI E",
+      "Cost": 1522000,
+      "Invoice No": 16946,
+      "Date": "28/03/2020",
+      "__EMPTY": "20200302-01PL"
+    },
+    {
+      "No": 91,
+      "Name": "Network H Optical check",
+      "Cost": 1500000,
+      "Invoice No": 15764,
+      "Date": "17/03/2020",
+      "__EMPTY": "2020303-02PL"
+    },
+    {
+      "No": 92,
+      "Name": "Repair Optical C",
+      "Cost": 1000000,
+      "Invoice No": 20138,
+      "Date": "19/05/2020",
+      "__EMPTY": "2020331-19PL"
+    },
+    {
+      "No": 93,
+      "Name": "Move rack E",
+      "Cost": 1000000,
+      "Invoice No": 20138,
+      "Date": "19/05/2020",
+      "__EMPTY": "2020331-19PL"
+    },
+    {
+      "No": 94,
+      "Name": "Network Loom Machine FR14",
+      "Cost": 18223198,
+      "Invoice No": 22146,
+      "Date": 44080,
+      "__EMPTY": "2020331-19PL"
+    },
+    {
+      "No": 95,
+      "Name": "Fee change 3 switch F",
+      "Cost": 1000000,
+      "Invoice No": 20138,
+      "Date": "19/05/2020",
+      "__EMPTY": "2020331-19PL"
+    },
+    {
+      "No": 96,
+      "Name": "Camera for Public testing",
+      "Cost": 86001000,
+      "Invoice No": 22149,
+      "Date": 44080,
+      "__EMPTY": "20200410-03PL",
+      "__EMPTY_1": "D, A, AR02"
+    },
+    {
+      "No": 97,
+      "Name": "Camera for Public Next Phase",
+      "Cost": 83410000,
+      "Invoice No": 22461,
+      "Date": 44171,
+      "__EMPTY": "20200422-10PL",
+      "__EMPTY_1": "D, C, G"
+    },
+    {
+      "No": 98,
+      "Name": "Moving cabinet E",
+      "Cost": 4792000,
+      "Invoice No": 20132,
+      "Date": "19/05/2020",
+      "__EMPTY": "20200422-10PL"
+    },
+    {
+      "No": 99,
+      "Name": "Alarm H",
+      "Cost": 690000,
+      "Invoice No": 20138,
+      "Date": "19/05/2020",
+      "__EMPTY": "20200422-10PL"
+    },
+    {
+      "No": 100,
+      "Name": "Accessories Camera",
+      "Cost": 1290000,
+      "Invoice No": 22148,
+      "Date": 44080,
+      "__EMPTY": "20200428-16PL"
+    },
+    {
+      "No": 101,
+      "Name": "Accessories Moving Cabinet E",
+      "Cost": 360000,
+      "Invoice No": 20132,
+      "Date": "19/05/2020",
+      "__EMPTY": "20200428-16PL"
+    },
+    {
+      "No": 102,
+      "Name": "Laser Hall G network",
+      "Cost": 1956000,
+      "Invoice No": 22461,
+      "Date": 44171,
+      "__EMPTY": "20200522-11PL"
+    },
+    {
+      "No": 103,
+      "Name": "Move network Hall A",
+      "Cost": 3960000,
+      "Invoice No": 22457,
+      "Date": 44171,
+      "__EMPTY": "20200522-11PL"
+    },
+    {
+      "No": 104,
+      "Name": "Move network Hall F",
+      "Cost": 6752000,
+      "Invoice No": 22457,
+      "Date": 44171,
+      "__EMPTY": "20200522-11PL"
+    },
+    {
+      "No": 105,
+      "Name": "Move network Hall B",
+      "Cost": 1620000,
+      "Invoice No": 22457,
+      "Date": 44171,
+      "__EMPTY": "20200522-11PL"
+    },
+    {
+      "No": 106,
+      "Name": "Accessories Camera",
+      "Cost": 4440000,
+      "Invoice No": 22457,
+      "Date": 44171,
+      "__EMPTY": "20200522-11PL"
+    },
+    {
+      "No": 107,
+      "Name": "Network warehouse A",
+      "Cost": 6873000,
+      "Invoice No": 22448,
+      "Date": 44171,
+      "__EMPTY": "20200522-11PL"
+    },
+    {
+      "No": 108,
+      "Name": "Network Export Warehouse B",
+      "Cost": 10683000,
+      "Invoice No": 22446,
+      "Date": 44171,
+      "__EMPTY": "20200522-11PL"
+    },
+    {
+      "No": 109,
+      "Name": "Repair Alarm X",
+      "Cost": 9465000,
+      "Invoice No": 22702,
+      "Date": "15/06/2020",
+      "__EMPTY": "20200526-11QNIPL "
+    },
+    {
+      "No": 110,
+      "Name": "Move Alarm Button X, Y",
+      "Cost": 5400000,
+      "Invoice No": 22704,
+      "Date": "15/06/2020",
+      "__EMPTY": "20200526-11QNIPL "
+    },
+    {
+      "No": 111,
+      "Name": "Move network cabinet X, Y, Z",
+      "Cost": 14916000,
+      "Invoice No": 22702,
+      "Date": "15/06/2020",
+      "__EMPTY": "20200526-11QNIPL "
+    },
+    {
+      "No": 112,
+      "Name": "Camera for Rieker 2",
+      "Cost": 1052622000,
+      "Invoice No": 2410,
+      "Date": "20/10/2020",
+      "__EMPTY": "20200618-07PL"
+    },
+    {
+      "No": 113,
+      "Name": "Repair Alarm X",
+      "Cost": 12400000,
+      "Invoice No": 29053,
+      "Date": "19/09/2020",
+      "__EMPTY": "20200716-07PL"
+    },
+    {
+      "No": 114,
+      "Name": "Telephone End of Hall A",
+      "Cost": 13358000,
+      "Invoice No": 28569,
+      "Date": "15/09/2020",
+      "__EMPTY": "20200716-07PL"
+    },
+    {
+      "No": 115,
+      "Name": "Network new cutting machine",
+      "Cost": 2319000,
+      "Invoice No": 26873,
+      "Date": "17/08/2020",
+      "__EMPTY": "20200716-07PL"
+    },
+    {
+      "No": 116,
+      "Name": "Network CNC machine",
+      "Cost": 10496000,
+      "Invoice No": 26871,
+      "Date": "17/08/2020",
+      "__EMPTY": "20200716-07PL"
+    },
+    {
+      "No": 117,
+      "Name": "Network new Purchasing",
+      "Cost": 10408000,
+      "Invoice No": 26872,
+      "Date": "17/08/2020",
+      "__EMPTY": "20200716-07PL"
+    },
+    {
+      "No": 118,
+      "Name": "Network BR15",
+      "Cost": 3879000,
+      "Invoice No": 26874,
+      "Date": "17/08/2020",
+      "__EMPTY": "20200716-07PL"
+    },
+    {
+      "No": 119,
+      "Name": "Test walkie talkie",
+      "Cost": 2000000,
+      "Invoice No": 26871,
+      "Date": "17/08/2020",
+      "__EMPTY": "20200716-07PL"
+    },
+    {
+      "No": 120,
+      "Name": "Repair alarm Hall F from 01-06/2020",
+      "Cost": 219860000,
+      "Invoice No": "28611;28614",
+      "Date": "16/09/2020;16/09/2020",
+      "__EMPTY": "20200717-18PL"
+    },
+    {
+      "No": 121,
+      "Name": "Network for CNC Hall X",
+      "Cost": 23469500,
+      "Invoice No": 2369,
+      "Date": "20/10/2020",
+      "__EMPTY": "20200722-06QNIPL "
+    },
+    {
+      "No": 122,
+      "Name": "Network for Export Hall Y",
+      "Cost": 15280000,
+      "Invoice No": 2376,
+      "Date": "20/10/2020",
+      "__EMPTY": "20200922-03QNIPL"
+    },
+    {
+      "No": 123,
+      "Name": "Network for CNC Hall X",
+      "Cost": 1224000,
+      "Invoice No": 2376,
+      "Date": "20/10/2020",
+      "__EMPTY": "20200922-03QNIPL"
+    },
+    {
+      "No": 124,
+      "Name": "Camera for A and B",
+      "Cost": 91374000,
+      "Invoice No": 13146,
+      "Date": "22/01/2021",
+      "__EMPTY": "20201012-06PL"
+    },
+    {
+      "No": 125,
+      "Name": "Camera for Parking area end of Hall A",
+      "Cost": 88109000,
+      "Invoice No": 13568,
+      "Date": "27/01/2021",
+      "__EMPTY": "20201110-08PL"
+    },
+    {
+      "No": 126,
+      "Name": "Repair Alarm System A B Extend",
+      "Cost": 16200000,
+      "__EMPTY": "20201124-13PL "
+    },
+    {
+      "No": 127,
+      "Name": "Repair Alarm System A B",
+      "Cost": 27390000,
+      "__EMPTY": "20201124-13PL "
+    },
+    {
+      "No": 128,
+      "Name": "Camera D",
+      "Cost": 13369000,
+      "__EMPTY": "20201124-13PL "
+    },
+    {
+      "No": 129,
+      "Name": "Maintenance Optical Cable",
+      "Cost": 21428000,
+      "__EMPTY": "20201124-13PL "
+    },
+    {
+      "No": 130,
+      "Name": "New network BO07",
+      "Cost": 7069000,
+      "__EMPTY": "20201124-13PL "
+    },
+    {
+      "No": 131,
+      "Name": "Network Hall H",
+      "Cost": 7616000,
+      "__EMPTY": "20201124-13PL "
+    },
+    {
+      "No": 132,
+      "Name": "Repair Alarm System C",
+      "Cost": 12490000,
+      "Invoice No": 13143,
+      "Date": "22/01/2021",
+      "__EMPTY": "20201222-08PL"
+    },
+    {
+      "No": 133,
+      "Name": "Repair Alarm System D",
+      "Cost": 8800000,
+      "Invoice No": 13146,
+      "Date": "22/01/2021",
+      "__EMPTY": "20201222-08PL"
+    },
+    {
+      "No": 134,
+      "Name": "Additional Camera D",
+      "Cost": 11225000,
+      "Invoice No": 13143,
+      "Date": "22/01/2021",
+      "__EMPTY": "20201222-08PL"
+    },
+    {
+      "No": 135,
+      "Name": "Repair Network B",
+      "Cost": 4700000,
+      "Invoice No": 13144,
+      "Date": "22/01/2021",
+      "__EMPTY": "20201222-08PL"
+    },
+    {
+      "No": 136,
+      "Name": "Network cable for BO04-Bo07",
+      "Cost": 28716000,
+      "__EMPTY_1": "Just invoice"
+    },
+    {
+      "No": 137,
+      "Name": "Repair Alarm Hall G",
+      "Cost": 34820000,
+      "Invoice No": 13145,
+      "Date": "22/01/2021",
+      "__EMPTY_1": "Just invoice"
+    },
+    {
+      "No": 138,
+      "Name": "Repair Alarm System A Extend",
+      "Cost": 18250000,
+      "Invoice No": 18729,
+      "Date": "24/03/2021",
+      "__EMPTY": "20210304-03PL"
+    },
+    {
+      "No": 139,
+      "Name": "Repair Alarm System B Extend",
+      "Cost": 23540000,
+      "Invoice No": 18729,
+      "Date": "24/03/2021",
+      "__EMPTY": "20210304-03PL"
+    },
+    {
+      "No": 140,
+      "Name": "Repair Alarm System C",
+      "Cost": 31190000,
+      "Invoice No": 18728,
+      "Date": "24/03/2021",
+      "__EMPTY": "20210304-03PL"
+    },
+    {
+      "No": 141,
+      "Name": "Repair Alarm Hall G",
+      "Cost": 35780000,
+      "Invoice No": 18727,
+      "Date": "24/03/2021",
+      "__EMPTY": "20210304-03PL"
+    },
+    {
+      "No": 142,
+      "Name": "Project in H - 2021",
+      "Cost": 36859000,
+      "Invoice No": 26925,
+      "Date": 44506,
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 143,
+      "Name": "Repair Alarm Hall A",
+      "Cost": 11720000,
+      "Invoice No": 27966,
+      "Date": "21/06/2021",
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 144,
+      "Name": "Repair Alarm Hall B",
+      "Cost": 16090000,
+      "Invoice No": 26934,
+      "Date": 44506,
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 145,
+      "Name": "Repair Alarm Hall D",
+      "Cost": 8600000,
+      "Invoice No": 26948,
+      "Date": 44506,
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 146,
+      "Name": "Repair Alarm Hall E",
+      "Cost": 18595000,
+      "Invoice No": 26945,
+      "Date": 44506,
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 147,
+      "Name": "Repair alarm Hall F",
+      "Cost": 17500000,
+      "Invoice No": 26947,
+      "Date": 44506,
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 148,
+      "Name": "Repair alarm Hall H",
+      "Cost": 5300000,
+      "Invoice No": 26946,
+      "Date": 44506,
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 149,
+      "Name": "Network AO-03",
+      "Cost": 3986200,
+      "Invoice No": 26936,
+      "Date": 44506,
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 150,
+      "Name": "Network DO-01",
+      "Cost": 1372000,
+      "Invoice No": 26933,
+      "Date": 44506,
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 151,
+      "Name": "Network ER-02",
+      "Cost": 3063000,
+      "Invoice No": 26931,
+      "Date": 44506,
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 152,
+      "Name": "Network FO-07",
+      "Cost": 10031000,
+      "Invoice No": 26930,
+      "Date": 44506,
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 153,
+      "Name": "Network Studio",
+      "Cost": 5296000,
+      "Invoice No": 26935,
+      "Date": 44506,
+      "__EMPTY": "20210526-14PL"
+    },
+    {
+      "No": 154,
+      "Name": "Project Alarm H-2021",
+      "Cost": 96068000,
+      "Invoice No": 26966,
+      "Date": 44506,
+      "__EMPTY": "03242021FS/HDKT"
+    },
+    {
+      "No": 155,
+      "Name": "Project Network H-2021",
+      "Cost": 561907700,
+      "Invoice No": 26964,
+      "Date": 44506,
+      "__EMPTY": "03242021NS/HDKT ",
+      "__EMPTY_1": "inluding ANNEX 06112021"
+    },
+    {
+      "No": 156,
+      "Name": "Moving Office Import Export",
+      "Cost": 19420000,
+      "Invoice No": 35031,
+      "Date": 44418,
+      "__EMPTY": "20210706-04PL"
+    },
+    {
+      "No": 157,
+      "Name": "Moving Office Acc",
+      "Cost": 3050000,
+      "Invoice No": 35032,
+      "Date": 44418,
+      "__EMPTY": "20210706-04PL"
+    },
+    {
+      "No": 158,
+      "Name": "Moving Office Schneider",
+      "Cost": 86319000,
+      "Invoice No": 35033,
+      "Date": 44418,
+      "__EMPTY": "20210706-04PL"
+    },
+    {
+      "No": 159,
+      "Name": "Network Lab FR14",
+      "Cost": 5327000,
+      "Invoice No": 35036,
+      "Date": 44418,
+      "__EMPTY": "20210706-04PL"
+    },
+    {
+      "No": 160,
+      "Name": "Network AR 19",
+      "Cost": 3818500,
+      "Invoice No": 35037,
+      "Date": 44418,
+      "__EMPTY": "20210706-04PL"
+    },
+    {
+      "No": 161,
+      "Name": "Network AR 17 BR17",
+      "Cost": 5696000,
+      "Invoice No": 35039,
+      "Date": 44418,
+      "__EMPTY": "20210706-04PL"
+    },
+    {
+      "No": 162,
+      "Name": "Moving IT Office A",
+      "Cost": 173478000,
+      "Invoice No": 35038,
+      "Date": 44418,
+      "__EMPTY": "20210706-04PL"
+    },
+    {
+      "No": 163,
+      "Name": "Moving Pur Office",
+      "Cost": 24218500,
+      "Invoice No": 35029,
+      "Date": 44418,
+      "__EMPTY": "20210707-05PL"
+    },
+    {
+      "No": 164,
+      "Name": "Project Mr. Long Office",
+      "Cost": 143994800,
+      "Invoice No": 46261,
+      "Date": "16/12/2021",
+      "__EMPTY": "20211101-01PL"
+    },
+    {
+      "No": 165,
+      "Name": "Network BR15",
+      "Cost": 4033000,
+      "Invoice No": 45451,
+      "Date": 44512,
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 166,
+      "Name": "Network A-IT",
+      "Cost": 2307500,
+      "Invoice No": 45449,
+      "Date": 44512,
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 167,
+      "Name": "Network BR-11",
+      "Cost": 5415500,
+      "Invoice No": 45449,
+      "Date": 44512,
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 168,
+      "Name": "Network Hall H",
+      "Cost": 3136000,
+      "Invoice No": 45449,
+      "Date": 44512,
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 169,
+      "Name": "Network parking Hall B",
+      "Cost": 15091000,
+      "Invoice No": 46260,
+      "Date": "16/12/2021",
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 170,
+      "Name": "Network WIFI Hall F",
+      "Cost": 2200000,
+      "Invoice No": 45448,
+      "Date": 44512,
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 171,
+      "Name": "Alarm A and A Extend",
+      "Cost": 16700000,
+      "Invoice No": 45450,
+      "Date": 44512,
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 172,
+      "Name": "Alarm B and B Extend",
+      "Cost": 28236000,
+      "Invoice No": 45450,
+      "Date": 44512,
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 173,
+      "Name": "Alarm C",
+      "Cost": 15091500,
+      "Invoice No": 45450,
+      "Date": 44512,
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 174,
+      "Name": "Time Card F",
+      "Cost": 3557000,
+      "Invoice No": 45448,
+      "Date": 44512,
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 175,
+      "Name": "Check optical cable",
+      "Cost": 4900000,
+      "Invoice No": 46262,
+      "Date": "16/12/2021",
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 176,
+      "Name": "Network AR11",
+      "Cost": 2769000,
+      "Invoice No": 45448,
+      "Date": 44512,
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 177,
+      "Name": "Network AR17",
+      "Cost": 2227500,
+      "Invoice No": 45448,
+      "Date": 44512,
+      "__EMPTY": "20211130-20PL"
+    },
+    {
+      "No": 178,
+      "Name": "CNC Quang Ngai",
+      "Cost": 28700000,
+      "Invoice No": 52329,
+      "Date": 44775,
+      "__EMPTY": "202112-04QNIPL"
+    },
+    {
+      "No": 179,
+      "Name": "Repair Alarm X",
+      "Cost": 49890000,
+      "Invoice No": 52329,
+      "Date": 44775,
+      "__EMPTY": "20220117-04QNPL"
+    },
+    {
+      "No": 180,
+      "Name": "Network CNC X",
+      "Cost": 22521000,
+      "Invoice No": 52333,
+      "Date": 44775,
+      "__EMPTY": "20220117-04QNPL"
+    },
+    {
+      "No": 181,
+      "Name": "Backup Link for Export Section",
+      "Cost": 11960000,
+      "Invoice No": 52336,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 182,
+      "Name": "Moving IT Office E",
+      "Cost": 95268000,
+      "Invoice No": 52343,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 183,
+      "Name": "Network AO-07",
+      "Cost": 8287000,
+      "Invoice No": 52351,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 184,
+      "Name": "Network for Gusbi Machine",
+      "Cost": 4258000,
+      "Invoice No": 52353,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 185,
+      "Name": "Repair Alarm E",
+      "Cost": 22860000,
+      "Invoice No": 52336,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 186,
+      "Name": "Repair Alarm F",
+      "Cost": 30870000,
+      "Invoice No": 52336,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 187,
+      "Name": "Repair Network ER-14-17",
+      "Cost": 7826000,
+      "Invoice No": 52337,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 188,
+      "Name": "Repair Network E-AVO",
+      "Cost": 4868000,
+      "Invoice No": 52350,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 189,
+      "Name": "Repair Network A-AO03",
+      "Cost": 2878000,
+      "Invoice No": 52352,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 190,
+      "Name": "Repair Network F-FR01",
+      "Cost": 4129000,
+      "Invoice No": 52354,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 191,
+      "Name": "Repair Network H1",
+      "Cost": 5004000,
+      "Invoice No": 52355,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 192,
+      "Name": "Repair Network F-FO01",
+      "Cost": 4970000,
+      "Invoice No": 52361,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 193,
+      "Name": "Repair Network G-Go07",
+      "Cost": 2312000,
+      "Invoice No": 52361,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 194,
+      "Name": "Wifi D&G",
+      "Cost": 1600000,
+      "Invoice No": 52361,
+      "Date": 44775,
+      "__EMPTY": "20220117-05PL"
+    },
+    {
+      "No": 195,
+      "Name": "Moving IT Office E - More",
+      "Cost": 66340000,
+      "Invoice No": 52361,
+      "Date": 44775,
+      "__EMPTY": "20220216-07PL"
+    },
+    {
+      "No": 196,
+      "Name": "Network Hall F",
+      "Cost": 5841000,
+      "Invoice No": "60630;60628",
+      "Date": "6/4/2022;6/4/2022",
+      "__EMPTY": "20220325-10PL"
+    },
+    {
+      "No": 197,
+      "Name": "Network Hall F - Emma",
+      "Cost": 9129000,
+      "Invoice No": "60622;60627",
+      "Date": "6/4/2022;6/4/2022",
+      "__EMPTY": "20220325-10PL"
+    },
+    {
+      "No": 198,
+      "Name": "Repair Alarm A",
+      "Cost": 12970000,
+      "Invoice No": "60618;60619",
+      "Date": "6/4/2022;6/4/2022",
+      "__EMPTY": "20220325-10PL"
+    },
+    {
+      "No": 199,
+      "Name": "Repair Alarm B",
+      "Cost": 47780000,
+      "Invoice No": 60618,
+      "Date": 44716,
+      "__EMPTY": "20220325-10PL"
+    },
+    {
+      "No": 200,
+      "Name": "Repair Alarm F",
+      "Cost": 11490000,
+      "Invoice No": 60618,
+      "Date": 44716,
+      "__EMPTY": "20220325-10PL"
+    },
+    {
+      "No": 201,
+      "Name": "Network A - AO03",
+      "Cost": 64657000,
+      "Invoice No": "60612;60613",
+      "Date": "6/4/2022;6/4/2022",
+      "__EMPTY": "20220325-10PL"
+    },
+    {
+      "No": 202,
+      "Name": "Repair Network and Power Export",
+      "Cost": 7044000,
+      "Invoice No": "60609;60610",
+      "Date": "6/4/2022;6/4/2022",
+      "__EMPTY": "20220325-10PL"
+    },
+    {
+      "No": 203,
+      "Name": "Network Hall A - Emma",
+      "Cost": 9768000,
+      "Invoice No": "60607;60608",
+      "Date": "6/4/2022;6/4/2022",
+      "__EMPTY": "20220325-10PL"
+    },
+    {
+      "No": 204,
+      "Name": "Network Hall B - Emma",
+      "Cost": 10088000,
+      "Invoice No": "60605;60606",
+      "Date": "6/4/2022;6/4/2022",
+      "__EMPTY": "20220325-10PL"
+    },
+    {
+      "No": 205,
+      "Name": "Network Hall H - Purchasing",
+      "Cost": 14901000,
+      "Invoice No": "61124;60621",
+      "Date": "9/4/2022;6/4/2022",
+      "__EMPTY": "20220325-10PL"
+    },
+    {
+      "No": 206,
+      "Name": "Network Hall H",
+      "Cost": 5820000,
+      "Invoice No": "60633;60632",
+      "Date": "6/4/2022;6/4/2022",
+      "__EMPTY": "20220325-10PL"
+    },
+    {
+      "No": 207,
+      "Name": "MP - Office - X",
+      "Cost": 47021000,
+      "Invoice No": "4560;4561",
+      "Date": "11/6/2022;11/6/2022",
+      "__EMPTY": "20220427-07QNIPL"
+    },
+    {
+      "No": 208,
+      "Name": "Repair Alarm System - A Extend",
+      "Cost": 2500000,
+      "Invoice No": 2736,
+      "Date": "28/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 209,
+      "Name": "Repair Alarm System - C",
+      "Cost": 6840000,
+      "Invoice No": 2770,
+      "Date": "30/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 210,
+      "Name": "Repair Alarm System -E",
+      "Cost": 3200000,
+      "Invoice No": 2770,
+      "Date": "28/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 211,
+      "Name": "Repair Alarm System -F",
+      "Cost": 19670000,
+      "Invoice No": 2747,
+      "Date": "28/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 212,
+      "Name": "Repair Alarm System -G",
+      "Cost": 17810000,
+      "Invoice No": 2767,
+      "Date": "30/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 213,
+      "Name": "Repair Alarm System - A",
+      "Cost": 5600000,
+      "Invoice No": 2736,
+      "Date": "28/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 214,
+      "Name": "Repair Alarm System - B",
+      "Cost": 7600000,
+      "Invoice No": 2771,
+      "Date": "30/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 215,
+      "Name": "Repair Alarm System - D",
+      "Cost": 3090000,
+      "Invoice No": 2747,
+      "Date": "28/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 216,
+      "Name": "Repair Alarm System - H",
+      "Cost": 3090000,
+      "Invoice No": 2747,
+      "Date": "28/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 217,
+      "Name": "Repair Camera A-G-E",
+      "Cost": 4800000,
+      "Invoice No": 2736,
+      "Date": "28/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 218,
+      "Name": "Repair Optical Cable A-C",
+      "Cost": 26204000,
+      "Invoice No": "2756;2755",
+      "Date": "30/5/2022;30/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 219,
+      "Name": "Optical Cable A",
+      "Cost": 18083000,
+      "Invoice No": "2758;2759",
+      "Date": "30/5/2022;30/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 220,
+      "Name": "Telephone H-A-F-B",
+      "Cost": 7300000,
+      "Invoice No": 2736,
+      "Date": "28/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 221,
+      "Name": "Network for Hall H",
+      "Cost": 28285500,
+      "Invoice No": "2760;2761",
+      "Date": "30/5/2022;30/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 222,
+      "Name": "Network for Hall A Marking",
+      "Cost": 9322000,
+      "Invoice No": "2768;2769",
+      "Date": "30/5/2022;30/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 223,
+      "Name": "Network for Hall B Marking",
+      "Cost": 19163000,
+      "Invoice No": "2765;2766",
+      "Date": "30/5/2022;30/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 224,
+      "Name": "Network for Hall F Marking",
+      "Cost": 4094000,
+      "Invoice No": "2762;2763",
+      "Date": "30/5/2022;30/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 225,
+      "Name": "Nep Ban Nguyet",
+      "Cost": 2760000,
+      "Invoice No": 2757,
+      "Date": "30/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 226,
+      "Name": "Nút nhấn khẩn cấp",
+      "Cost": 3050000,
+      "Invoice No": 2747,
+      "Date": "28/5/2022",
+      "__EMPTY": "20220514-07PL"
+    },
+    {
+      "No": 227,
+      "Name": "Network for Hall Z Marking",
+      "Cost": 8532000,
+      "Invoice No": "4563;4564",
+      "Date": "11/6/2022;11/6/2022",
+      "__EMPTY": "20220528-10QNIPL"
+    },
+    {
+      "No": 228,
+      "Name": "Thay o khoa",
+      "Cost": 2000000,
+      "Invoice No": 4562,
+      "Date": 44871,
+      "__EMPTY": "20220528-10QNIPL"
+    },
+    {
+      "No": 229,
+      "Name": "Repair Alarm System X - 4",
+      "Cost": 24280000,
+      "Invoice No": 4565,
+      "Date": 44871,
+      "__EMPTY": "20220528-10QNIPL"
+    },
+    {
+      "No": 230,
+      "Name": "Repair Alarm System X - 5",
+      "Cost": 30020000,
+      "Invoice No": 4559,
+      "Date": 44871,
+      "__EMPTY": "20220528-10QNIPL"
+    },
+    {
+      "No": 231,
+      "Name": "New Alarm System C",
+      "Cost": 143111000,
+      "Invoice No": 3494,
+      "Date": 45171,
+      "__EMPTY": "20220707-03PL",
+      "__EMPTY_1": "Anh Duy báo đã xong ngày 4/2/2023"
+    },
+    {
+      "No": 232,
+      "Name": "Move optical cable Hall C",
+      "Cost": 139151000,
+      "Invoice No": "20483;20484",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220719-13PL"
+    },
+    {
+      "No": 233,
+      "Name": "New Network Hall W",
+      "Cost": 1042878980,
+      "Invoice No": "11025;11026;11027;11028;11029;11030;11031;11032;11033;",
+      "Date": "1/8/2022;1/8/2022;1/8/2022;1/8/2022;1/8/2022;1/8/2022;1/8/2022;1/8/2022;1/8/2022",
+      "__EMPTY": "18022022/HDKT-NS"
+    },
+    {
+      "No": 234,
+      "Name": "Network YR-15",
+      "Cost": 14784500,
+      "Invoice No": "20407;20408",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220819-06QNIPL",
+      "__EMPTY_1": "BLV"
+    },
+    {
+      "No": 235,
+      "Name": "Antenna For HR",
+      "Cost": 2454000,
+      "Invoice No": 16857,
+      "Date": "15/9/2022",
+      "__EMPTY": "20220819-06QNIPL"
+    },
+    {
+      "No": 236,
+      "Name": "Network Hall E & GO05",
+      "Cost": 3907000,
+      "Invoice No": "20409;20410",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220820-16PL"
+    },
+    {
+      "No": 237,
+      "Name": "Repair Alarm System A - Extend",
+      "Cost": 12300000,
+      "Invoice No": 20417,
+      "Date": 44722,
+      "__EMPTY": "20220822-15PL"
+    },
+    {
+      "No": 238,
+      "Name": "Repair Alarm System A",
+      "Cost": 17090000,
+      "Invoice No": 20411,
+      "Date": 44722,
+      "__EMPTY": "20220822-15PL"
+    },
+    {
+      "No": 239,
+      "Name": "Repair Alarm System B",
+      "Cost": 20840000,
+      "Invoice No": 20412,
+      "Date": 44722,
+      "__EMPTY": "20220823-19PL"
+    },
+    {
+      "No": 240,
+      "Name": "Repair Camera H",
+      "Cost": 6548000,
+      "Invoice No": "20418;20419",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220823-19PL"
+    },
+    {
+      "No": 241,
+      "Name": "Repair Alarm System E",
+      "Cost": 17220000,
+      "Invoice No": 20415,
+      "Date": 44722,
+      "__EMPTY": "20220824-21PL"
+    },
+    {
+      "No": 242,
+      "Name": "Network components",
+      "Cost": 3790000,
+      "Invoice No": "20428;20429",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220824-21PL"
+    },
+    {
+      "No": 243,
+      "Name": "Repair Alarm System F",
+      "Cost": 26040000,
+      "Invoice No": 20416,
+      "Date": 44722,
+      "__EMPTY": "20220825-25PL"
+    },
+    {
+      "No": 244,
+      "Name": "Network Hall AO-07",
+      "Cost": 3812500,
+      "Invoice No": "20449;20450",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220825-25PL"
+    },
+    {
+      "No": 245,
+      "Name": "Repair Alarm System G",
+      "Cost": 21303000,
+      "Invoice No": 20485,
+      "Date": 44722,
+      "__EMPTY": "20220829-26PL"
+    },
+    {
+      "No": 246,
+      "Name": "Network for Gbos Machine - Marking - A&B",
+      "Cost": 8586000,
+      "Invoice No": "20462;20463",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220830-29PL"
+    },
+    {
+      "No": 247,
+      "Name": "Network for Gbos Machine - Marking - A&B",
+      "Cost": 8576000,
+      "Invoice No": "20445;20446",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220830-30PL"
+    },
+    {
+      "No": 248,
+      "Name": "Network for Gbos Machine - Marking - A&B",
+      "Cost": 9117000,
+      "Invoice No": "20441;20442",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220830-31PL"
+    },
+    {
+      "No": 249,
+      "Name": "Network for Gbos Machine - Marking - F",
+      "Cost": 6988000,
+      "Invoice No": "20476;20477",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220829-27PL"
+    },
+    {
+      "No": 250,
+      "Name": "Network for Gbos Machine - GR01",
+      "Cost": 5161000,
+      "Invoice No": "20439;20440",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220829-27PL"
+    },
+    {
+      "No": 251,
+      "Name": "Network for Gbos Machine - Marking - A&B",
+      "Cost": 9101000,
+      "Invoice No": "20430;20431",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220829-27PL"
+    },
+    {
+      "No": 252,
+      "Name": "Network for GR01",
+      "Cost": 7148000,
+      "Invoice No": "20447;20448",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220831-32PL"
+    },
+    {
+      "No": 253,
+      "Name": "Network for AO-09",
+      "Cost": 5007000,
+      "Invoice No": "20466;20467",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220831-32PL"
+    },
+    {
+      "No": 254,
+      "Name": "Network for AO-03",
+      "Cost": 4718000,
+      "Invoice No": "20460;20461",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220831-33PL"
+    },
+    {
+      "No": 255,
+      "Name": "Network for DO-01",
+      "Cost": 1472000,
+      "Invoice No": "20468;20469",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220831-33PL"
+    },
+    {
+      "No": 256,
+      "Name": "Network for EO-03",
+      "Cost": 3827500,
+      "Invoice No": "20464;20465",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220831-33PL"
+    },
+    {
+      "No": 257,
+      "Name": "Network for ER-17",
+      "Cost": 14032000,
+      "Invoice No": "20473;20474",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220831-34PL"
+    },
+    {
+      "No": 258,
+      "Name": "Network for FO-02",
+      "Cost": 4133500,
+      "Invoice No": "20470;20471",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220831-35PL"
+    },
+    {
+      "No": 259,
+      "Name": "Network for Laser GR01",
+      "Cost": 1862000,
+      "Invoice No": "20479;20480",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220831-35PL"
+    },
+    {
+      "No": 260,
+      "Name": "Network for Telephone Security - A -> AO09",
+      "Cost": 1723000,
+      "Invoice No": "20481;20482",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220831-35PL"
+    },
+    {
+      "No": 261,
+      "Name": "Network for Telephone Security - F",
+      "Cost": 2123000,
+      "Invoice No": "20458;20459",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220831-35PL"
+    },
+    {
+      "No": 262,
+      "Name": "Network for C - Mr. Drobiz new office",
+      "Cost": 36986000,
+      "Invoice No": "20420;20421",
+      "Date": "6/10/2022;6/10/2022",
+      "__EMPTY": "20220901-01PL"
+    },
+    {
+      "No": 263,
+      "Name": "Camera for Design",
+      "Cost": 74693000,
+      "Invoice No": "25943;25944",
+      "Date": "11/11/2022;11/11/2022",
+      "__EMPTY": "20221007-07PL "
+    },
+    {
+      "No": 264,
+      "Name": "Network for C&D",
+      "Cost": 6510000,
+      "Invoice No": "25924;25923",
+      "Date": "11/11/2022;11/11/2022",
+      "__EMPTY": "20221104-03PL"
+    },
+    {
+      "No": 265,
+      "Name": "Repair Alarm Hall C",
+      "Cost": 36110000,
+      "Invoice No": 25925,
+      "Date": 44876,
+      "__EMPTY": "20221104-04PL"
+    },
+    {
+      "No": 266,
+      "Name": "Repair Alarm Hall G",
+      "Cost": 29980000,
+      "Invoice No": 25930,
+      "Date": 44876,
+      "__EMPTY": "20221104-05PL"
+    },
+    {
+      "No": 267,
+      "Name": "Repair Alarm Hall E",
+      "Cost": 38450000,
+      "Invoice No": 25929,
+      "Date": 44876,
+      "__EMPTY": "20221104-06PL"
+    },
+    {
+      "No": 268,
+      "Name": "Repair Electricity Hall E",
+      "Cost": 3992000,
+      "Invoice No": "25927;25928",
+      "Date": "11/11/2022;11/11/2022",
+      "__EMPTY": "20221104-07PL"
+    },
+    {
+      "No": 269,
+      "Name": "Move Time Attendance D",
+      "Cost": 4510000,
+      "Invoice No": "25926;28180",
+      "Date": "11/11/2022;29/11/2022",
+      "__EMPTY": "20221104-07PL"
+    },
+    {
+      "No": 270,
+      "Name": "Network Mechical Warehouse",
+      "Cost": 3823000,
+      "Invoice No": "25931;28179;28360",
+      "Date": "11/11/2022;29/11/2022;30/11/2022",
+      "__EMPTY": "20221104-07PL"
+    },
+    {
+      "No": 271,
+      "Name": "Repair Alarm Hall B",
+      "Cost": 22040000,
+      "Invoice No": 25939,
+      "Date": 44876,
+      "__EMPTY": "20221104-08PL"
+    },
+    {
+      "No": 272,
+      "Name": "Network Hall C",
+      "Cost": 5433500,
+      "Invoice No": "25941;28178",
+      "Date": "11/11/2022;29/11/2022",
+      "__EMPTY": "20221104-09PL"
+    },
+    {
+      "No": 273,
+      "Name": "New Time Attendance H",
+      "Cost": 2105000,
+      "Invoice No": "25952;28177",
+      "Date": "12/11/2022;29/11/2022",
+      "__EMPTY": "20221104-09PL"
+    },
+    {
+      "No": 274,
+      "Name": "Camera for Quang Ngai",
+      "Cost": 1082583500,
+      "__EMPTY": "20221109-04QNIPL"
+    },
+    {
+      "No": 275,
+      "Name": "Repair Alarm Hall X",
+      "Cost": 46360000,
+      "Invoice No": 28981,
+      "Date": 44693,
+      "__EMPTY": "20221125-09QNIPL"
+    },
+    {
+      "No": 276,
+      "Name": "Repair Alarm Hall A",
+      "Cost": 18740000,
+      "Invoice No": 25942,
+      "Date": 44876,
+      "__EMPTY": "20221104-10PL"
+    },
+    {
+      "No": 277,
+      "Name": "Repair Alarm Hall B",
+      "Cost": 68026000,
+      "Invoice No": 3571,
+      "Date": 45232,
+      "__EMPTY": "20230202-04PL"
+    },
+    {
+      "No": 278,
+      "Name": "Repair Alarm Hall C",
+      "Cost": 7330000,
+      "Invoice No": 3352,
+      "Date": 45140,
+      "__EMPTY": "20230202-05PL"
+    },
+    {
+      "No": 279,
+      "Name": "Repair Alarm Hall G",
+      "Cost": 7700000,
+      "Invoice No": 3351,
+      "Date": 45140,
+      "__EMPTY": "20230202-05PL"
+    },
+    {
+      "No": 280,
+      "Name": "Repair Alarm Hall E",
+      "Cost": 17450000,
+      "Invoice No": 3350,
+      "Date": 45140,
+      "__EMPTY": "20230202-06PL"
+    },
+    {
+      "No": 281,
+      "Name": "Repair Alarm Hall F",
+      "Cost": 33420000,
+      "Invoice No": 3492,
+      "Date": 45171,
+      "__EMPTY": "20230202-07PL"
+    },
+    {
+      "No": 282,
+      "Name": "Repair Optical Cable A-C",
+      "Cost": 22800000,
+      "Invoice No": 3348,
+      "Date": 45140,
+      "__EMPTY": "20230202-08PL"
+    },
+    {
+      "No": 283,
+      "Name": "Optical cable BW-02",
+      "Cost": 2700000,
+      "Invoice No": 3345,
+      "Date": 45140,
+      "__EMPTY": "20230202-09PL"
+    },
+    {
+      "No": 284,
+      "Name": "Repair Network Cable Hall C",
+      "Cost": 6020000,
+      "Invoice No": 3338,
+      "Date": 45140,
+      "__EMPTY": "20230202-09PL"
+    },
+    {
+      "No": 285,
+      "Name": "Repair Network Cable Hall F",
+      "Cost": 6490000,
+      "Invoice No": 3344,
+      "Date": 45140,
+      "__EMPTY": "20230202-09PL"
+    },
+    {
+      "No": 286,
+      "Name": "Change Location for Time Attendance A&B",
+      "Cost": 16234000,
+      "Invoice No": 3337,
+      "Date": 45140,
+      "__EMPTY": "20230202-10PL"
+    },
+    {
+      "No": 287,
+      "Name": "Repair Optical Cable A-C",
+      "Cost": 5600000,
+      "Invoice No": 3336,
+      "Date": 45140,
+      "__EMPTY": "20230202-11PL"
+    },
+    {
+      "No": 288,
+      "Name": "Alarm for oil fatory 1",
+      "Cost": 52749800,
+      "Invoice No": 7467,
+      "Date": 45141,
+      "__EMPTY": "20230303-02QNIPL"
+    },
+    {
+      "No": 289,
+      "Name": "Alarm for oil fatory 2",
+      "Cost": 51220800,
+      "Invoice No": 7468,
+      "Date": 45172,
+      "__EMPTY": "20230303-02QNIPL"
+    },
+    {
+      "No": 290,
+      "Name": "Setup Card Reader to new location",
+      "Cost": 1500000,
+      "Invoice No": 9893,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230315-18PL"
+    },
+    {
+      "No": 291,
+      "Name": "Repair Alarm Hall B",
+      "Cost": 9650000,
+      "Invoice No": 9892,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230315-18PL"
+    },
+    {
+      "No": 292,
+      "Name": "Repair Alarm Hall C",
+      "Cost": 6250000,
+      "Invoice No": 9883,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230315-18PL"
+    },
+    {
+      "No": 293,
+      "Name": "Repair Alarm Hall A",
+      "Cost": 14290000,
+      "Invoice No": 9870,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230315-19PL"
+    },
+    {
+      "No": 294,
+      "Name": "Repair Alarm Hall D",
+      "Cost": 10080000,
+      "Invoice No": 9871,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230315-20PL"
+    },
+    {
+      "No": 295,
+      "Name": "Repair Alarm Hall E",
+      "Cost": 16650000,
+      "Invoice No": 9872,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230317-21PL"
+    },
+    {
+      "No": 296,
+      "Name": "Repair Alarm Hall F",
+      "Cost": 15300000,
+      "Invoice No": 9873,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230317-22PL"
+    },
+    {
+      "No": 297,
+      "Name": "Repair Alarm Hall G",
+      "Cost": 8500000,
+      "Invoice No": 9874,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230317-23PL"
+    },
+    {
+      "No": 298,
+      "Name": "Repair Alarm Hall I",
+      "Cost": 14890000,
+      "Invoice No": 9875,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230317-24PL"
+    },
+    {
+      "No": 299,
+      "Name": "Repair Camera E",
+      "Cost": 140000,
+      "Invoice No": 9883,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230317-25PL"
+    },
+    {
+      "No": 300,
+      "Name": "Setup Electricity for Cabinet A&B",
+      "Cost": 13100000,
+      "Invoice No": 9877,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230317-25PL"
+    },
+    {
+      "No": 301,
+      "Name": "Repair Network FO01",
+      "Cost": 2290000,
+      "Invoice No": 9878,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230317-26PL"
+    },
+    {
+      "No": 302,
+      "Name": "Network Studio",
+      "Cost": 11653000,
+      "Invoice No": 9885,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230317-26PL"
+    },
+    {
+      "No": 303,
+      "Name": "Repair Walkie Talkie",
+      "Cost": 1500000,
+      "Invoice No": 9890,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230317-26PL"
+    },
+    {
+      "No": 304,
+      "Name": "Setup New Leather Room",
+      "Cost": 58902500,
+      "Invoice No": 9891,
+      "Date": "28/3/2023",
+      "__EMPTY": "20230317-27PL"
+    }
+  ]
+}

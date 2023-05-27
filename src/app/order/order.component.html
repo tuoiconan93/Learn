@@ -1,1 +1,64 @@
-<p>order works!</p>
+<div>
+    <form action="" name="orderform">
+        <div class="card">
+            <div class="card-header">
+                <div class="rows h2 text-center">ORDER IT LIST VIET NAM</div>
+                <div class="rows float-end">
+                    <label class="" for="">Search:&nbsp;</label>
+                    <input class="input-group w-50 d-inline" type="text" ng-model="search" placeholder="keyword">
+                </div>
+            </div>
+            <div class="card-body table-overflow-y table-responsive">
+                <table class=" table table-striped table-inverse">
+                    <thead class="text-center table-dark">
+                        <tr>
+                            <th>Order ID<br><i ng-click="sortBy('OrderID')" class="fa-solid fa-arrow-up"></i><i
+                                    ng-click="sortBy('-OrderID')" class="fa-solid fa-arrow-down"></i> </th>
+                            <th>Product Name</th>
+                            <th>Quality</th>
+                            <th>Price (VND)</th>
+                            <th>Total (VND)</th>
+                            <th>Price (USD)</th>
+                            <th>Total (USD) </th>
+                            <th>Order Date</th>
+                            <th>Delivery Date</th>
+                            <th>Category</th>
+                            <th>Department</th>
+                            <th>PO</th>
+                            <th>Received Date</th>
+                            <th>Received</th>
+                            <th>Location</th>
+                            <th>From</th>
+                            <th>Invoice No</th>
+                            <th>Invoice Date</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="card-footer align-content-center">
+                <ul class="pagination justify-content-center text-center">
+                    <li class="btn  page-item ">
+                        <a class="page-link d-inline"><fa-icon [icon]="faBackwardFast"></fa-icon></a>
+                        <a class="page-link d-inline"><fa-icon [icon]="faBackwardStep"></fa-icon></a>
+                    </li>
+                    <li class="btn  page-item "><a class="page-link d-inline    ">Số page</a></li>
+                    <li class="btn  page-item ">
+                        <a class="d-inline page-link"><fa-icon [icon]="faForwardStep"></fa-icon></a>
+                        <a class="d-inline page-link"><fa-icon [icon]="faForwardFast"></fa-icon></a>
+                    </li>
+                </ul>
+                <div class="float-end">
+                    <label for="">Display:&nbsp;</label>
+                    <select style="height: 1.5rem;" name="" id="pageSize" class=" mt-0 p-0"
+                        [(ngModel)]="pagesize" convert-to-number ng-change="repaginate()"  [value]="pagesize">
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="500">500</option>
+                    </select>
+                  
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

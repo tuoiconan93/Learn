@@ -7,7 +7,7 @@
     <option selected>Quận/Huyện</option>
     <option *ngFor="let disc of Discs" [value]="disc.Name">{{ disc.Name }}</option>
   </select>
-  <select id="city" class="form-select w-auto d-inline  " aria-label="Default select example " (change)="changeWards($event)">
+  <select id="city" class="form-select w-auto d-inline" aria-label="Default select example " (change)="changeWards($event)">
     <option selected>Xã</option>
     <option *ngFor="let w of ward" [value]="w.Name">{{ w.Name }}</option>
   </select>
