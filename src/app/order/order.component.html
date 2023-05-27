@@ -5,7 +5,8 @@
                 <div class="rows h2 text-center">ORDER IT LIST VIET NAM</div>
                 <div class="rows float-end">
                     <label class="" for="">Search:&nbsp;</label>
-                    <input class="input-group w-50 d-inline" type="text" ng-model="search" placeholder="keyword">
+                    <input class="input-group w-50 d-inline" type="text" [(ngModel)]="search" placeholder="keyword" [ngModelOptions]="{standalone: true}">
+                    >
                 </div>
             </div>
             <div class="card-body table-overflow-y table-responsive">
@@ -34,6 +35,32 @@
                             <th>Notes</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        <tr class="text-center" *ngFor="let item of orderlists | slice:0:40">
+                            <td>{{item.OrderID}}</td>
+                            <td class="text-start">{{item.ProductName | uppercase}}</td>
+                            <td>{{item.Quality}}</td>
+                            <td>{{item.PriceVND | currency:'VND'}}</td>
+                            <td>{{item.TotalVND | currency:'VND'}}</td>
+                            <td>{{item.PriceUSD | currency:'USD'}}</td>
+                            <td>{{item.Total | currency:'USD'}}</td>
+                            <td>{{item.OrderDate }}</td>
+                            <td>{{item.DeliveryDate}}</td>
+                            <td>{{item.Category}}</td>
+                            <td>{{item.Department}}</td>
+                            <td>{{item.PO}}</td>
+                            <td>{{item.ReceivedDate }}</td>
+                            <td>{{item.Received}}</td>
+                            <td>{{item.Location}}</td>
+                            <td>{{item.From}}</td>
+                            <td>{{item.RecInvoiceNo}}</td>
+                            <td>{{item.InvoiceDate}}</td>
+                            <td>
+                                <textarea readonly name="" id="" cols="30" rows="1">{{item.Notes}}</textarea>
+
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <div class="card-footer align-content-center">
@@ -50,13 +77,14 @@
                 </ul>
                 <div class="float-end">
                     <label for="">Display:&nbsp;</label>
-                    <select style="height: 1.5rem;" name="" id="pageSize" class=" mt-0 p-0"
-                        [(ngModel)]="pagesize" convert-to-number ng-change="repaginate()"  [value]="pagesize">
+                    <select style="height: 1.5rem;" name="" id="pageSize" class=" mt-0 p-0" [(ngModel)]="pagesize"
+                        convert-to-number ng-change="repaginate()" [value]="pagesize"
+                        [ngModelOptions]="{standalone: true}">
                         <option value="100">100</option>
                         <option value="200">200</option>
                         <option value="500">500</option>
                     </select>
-                  
+
                 </div>
             </div>
         </div>
