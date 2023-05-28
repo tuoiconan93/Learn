@@ -36,14 +36,14 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="text-center" *ngFor="let item of orderlists | slice:0:40">
+            <tr class="text-center" *ngFor="let item of orderlists | slice:startitemshow:startitemshow+pagesize ">
               <td>{{item.OrderID}}</td>
               <td class="text-start">{{item.ProductName | uppercase}}</td>
               <td>{{item.Quality}}</td>
               <td>{{item.PriceVND | currency:'VND'}}</td>
-              <td>{{item.TotalVND | currency:'VND'}}</td>
-              <td>{{item.PriceUSD | currency:'USD'}}</td>
-              <td>{{item.Total | currency:'USD'}}</td>
+              <td>{{item.TotalVND|currency:'VND'}}</td>
+              <td>{{item.PriceUSD|currency}}</td>
+              <td>{{item.Total|currency}}</td>
               <td>{{item.OrderDate }}</td>
               <td>{{item.DeliveryDate}}</td>
               <td>{{item.Category}}</td>
@@ -57,13 +57,13 @@
               <td>{{item.InvoiceDate}}</td>
               <td>
                 <textarea readonly name="" id="" cols="30" rows="1">{{item.Notes}}</textarea>
-
               </td>
             </tr>
           </tbody>
         </table>
       </div>
       <div class="card-footer align-content-center">
+        <span>Start Item Show: {{ startitemshow }}</span>
         <ul class="pagination justify-content-center text-center">
           <li class="page-item ">
             <a class="btn page-link d-inline" (click)="previous10Page()">
@@ -87,7 +87,7 @@
         <div class="float-end">
           <label for="">Display:&nbsp;</label>
           <select style="height: 1.5rem;" name="" id="pageSize" class=" mt-0 p-0" [(ngModel)]="pagesize"
-            convert-to-number ng-change="repaginate()" [value]="pagesize" [ngModelOptions]="{standalone: true}">
+            convert-to-number (ngModelChange)="repaginate()" [value]="pagesize" [ngModelOptions]="{standalone: true}">
             <option value="100">100</option>
             <option value="200">200</option>
             <option value="500">500</option>
