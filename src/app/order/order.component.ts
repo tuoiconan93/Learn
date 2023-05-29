@@ -135,9 +135,12 @@ export class OrderComponent implements OnInit {
       
       return false; // Không có phần tử khớp, bị loại bỏ trong kết quả lọc
     });
-    
     this.pageCount = Math.ceil(filteredOrderLists.length / this.pagesize); // Tính lại số trang hiển thị
-    
+    if(this.currentPage>this.pageCount){
+      this.currentPage=1;
+      this.getPages();
+      
+    }  
     return filteredOrderLists;
   }
   

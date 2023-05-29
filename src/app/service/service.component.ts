@@ -31,6 +31,7 @@ export class ServiceComponent implements OnInit {
   public ngOnInit(): void {
     this.http.get('/assets/db/services.json').subscribe((data: any) => {
       this.services = data;
+      this.services.sort((a, b) => b.No - a.No);
       this.pageCount = Math.ceil(this.services.length / this.pagesize);
       this.updateStartItemShow();
     });
@@ -59,6 +60,7 @@ export class ServiceComponent implements OnInit {
   public setcurrentPage(page: number): void {
     this.currentPage = page;
     this.updateStartItemShow();
+    console.log(this.currentPage);
   }
   previous10Page(): void {
     if (this.currentPage > 10) {
@@ -111,9 +113,11 @@ export class ServiceComponent implements OnInit {
         return a.No - b.No; // Sắp xếp tăng dần theo OrderID
       }
     });
+    this.currentPage = 1;
   }
   public filteredservices(): any[] {
     if (!this.search) {
+      
       this.pageCount = Math.ceil(this.services.length / this.pagesize);
       return this.services; // Trả về mảng gốc nếu không có giá trị search
     }
@@ -133,10 +137,14 @@ export class ServiceComponent implements OnInit {
       
       return false; // Không có phần tử khớp, bị loại bỏ trong kết quả lọc
     });
-    
-    this.pageCount = Math.ceil(filteredservices.length / this.pagesize); // Tính lại số trang hiển thị
-    
+    this.pageCount = Math.ceil(filteredservices.length / this.pagesize);  
+    if(this.currentPage>this.pageCount){
+      this.currentPage=1;
+      this.getPages();
+      
+    }  
     return filteredservices;
   }
+  
 
 }
