@@ -1,5 +1,5 @@
 
-<div ><select id="city" class="form-select w-auto d-inline" aria-label="Default select example" (change)="changeCity($event)">
+<div class="container mt-5" ><select id="city" class="form-select w-auto d-inline" aria-label="Default select example" (change)="changeCity($event)">
     <option selected>Tỉnh/Thành Phố</option>
     <option *ngFor="let city of cities" [value]="city.Name">{{ city.Name }}</option>
   </select>

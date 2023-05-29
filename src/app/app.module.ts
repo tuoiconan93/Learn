@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { OrderComponent } from './order/order.component';
 import { ServiceComponent } from './service/service.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PageNotFoundComponent,
     OrderComponent,
     ServiceComponent,
+    FooterComponent,
     
   ],
   imports: [

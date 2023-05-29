@@ -14,9 +14,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class OrderComponent implements OnInit {
   public search: string = '';
-  public pagesize: number = 100;
+  public pagesize: number = 50;
   public orderlists: any[] = [];
-
   public currentPage: number = 1;
   public pageCount: number = 0;
   public startitemshow: number=0;
@@ -31,8 +30,11 @@ export class OrderComponent implements OnInit {
       this.orderlists = data;
       this.pageCount = Math.ceil(this.orderlists.length / this.pagesize);
       this.updateStartItemShow();
-      console.log(this.pageCount);
     });
+  }
+   //hien thi trang theo currenpage
+   public updateStartItemShow(): void {
+    this.startitemshow = (this.currentPage - 1) * this.pagesize;
   }
   //tinh trang hien tai
   public getPages(): number[] {
@@ -89,16 +91,13 @@ export class OrderComponent implements OnInit {
     }
     this.updateStartItemShow();
   }
-  //hien thi trang theo currenpage
-  public updateStartItemShow(): void {
-    this.startitemshow = (this.currentPage - 1) * this.pagesize;
-  }
+ 
   //thay doi so luong hien thi
   public repaginate(): void {
     this.startitemshow = 0;
     this.currentPage=1;
-    this.updateStartItemShow();
     this.pageCount = Math.ceil(this.orderlists.length / this.pagesize);
+    this.updateStartItemShow();
   }
   
 }
