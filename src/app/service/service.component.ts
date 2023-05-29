@@ -4,6 +4,7 @@ import {
   faBackwardStep,
   faForwardFast,
   faForwardStep,
+  faPlusCircle
 } from '@fortawesome/free-solid-svg-icons';
 import { HttpClient } from '@angular/common/http';
 
@@ -19,10 +20,12 @@ export class ServiceComponent implements OnInit {
   public currentPage: number = 1;
   public pageCount: number = 0;
   public startitemshow: number=0;
+  public isDescending: boolean = true;
   faBackwardFast = faBackwardFast;
   faBackwardStep = faBackwardStep;
   faForwardFast = faForwardFast;
   faForwardStep = faForwardStep;
+  faPlusCircle=faPlusCircle;
   constructor(private http: HttpClient) {}
   //get data and tinh so luong trang
   public ngOnInit(): void {
@@ -98,6 +101,42 @@ export class ServiceComponent implements OnInit {
     this.currentPage=1;
     this.pageCount = Math.ceil(this.services.length / this.pagesize);
     this.updateStartItemShow();
+  }
+  toggleSortservice(): void {
+    this.isDescending = !this.isDescending; // Đảo ngược thứ tự sắp xếp
+    this.services.sort((a, b) => {
+      if (this.isDescending) {
+        return b.No - a.No; // Sắp xếp giảm dần theo OrderID
+      } else {
+        return a.No - b.No; // Sắp xếp tăng dần theo OrderID
+      }
+    });
+  }
+  public filteredservices(): any[] {
+    if (!this.search) {
+      this.pageCount = Math.ceil(this.services.length / this.pagesize);
+      return this.services; // Trả về mảng gốc nếu không có giá trị search
+    }
+    
+    const filteredservices = this.services.filter((item) => {
+      // Lặp qua từng thuộc tính của phần tử để tìm kiếm
+      for (const key in item) {
+        if (item.hasOwnProperty(key)) {
+          const value = item[key];
+          
+          // Kiểm tra nếu giá trị thuộc tính khớp với giá trị search
+          if (value.toString().toLowerCase().includes(this.search.toLowerCase())) {
+            return true; // Phần tử khớp, được giữ lại trong kết quả lọc
+          }
+        }
+      }
+      
+      return false; // Không có phần tử khớp, bị loại bỏ trong kết quả lọc
+    });
+    
+    this.pageCount = Math.ceil(filteredservices.length / this.pagesize); // Tính lại số trang hiển thị
+    
+    return filteredservices;
   }
 
 }

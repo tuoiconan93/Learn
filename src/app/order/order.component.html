@@ -3,18 +3,22 @@
     <div class="card">
       <div class="card-header">
         <div class="rows h2 text-center">ORDER IT LIST VIET NAM</div>
-        <div class="rows float-end">
-          <label class="" for="">Search:&nbsp;</label>
-          <input class="input-group w-50 d-inline" type="text" [(ngModel)]="search" placeholder="keyword"
-            [ngModelOptions]="{standalone: true}">
+        <div class="rows">
+          <div class="float-start">
+            <button class="btn btn-primary"><fa-icon [icon]="faPlusCircle"></fa-icon>New</button>
+          </div>
+          <div class="float-end">
+            <label class="" for="">Search:&nbsp;</label>
+            <input class="input-group w-50 d-inline" type="text" [(ngModel)]="search" placeholder="keyword"
+              [ngModelOptions]="{standalone: true}">
+          </div>
         </div>
       </div>
       <div class="card-body table-overflow-y table-responsive">
         <table class=" table table-striped table-inverse">
           <thead class="text-center table-dark">
             <tr>
-              <th>Order ID<br><i ng-click="sortBy('OrderID')" class="fa-solid fa-arrow-up"></i><i
-                  ng-click="sortBy('-OrderID')" class="fa-solid fa-arrow-down"></i> </th>
+              <th> Order ID <br><a (click)="toggleSortOrder()" ><i  class="fa-solid fa-arrow-up d-inline"></i><i class="fa-solid fa-arrow-down d-inline"></i></a></th>
               <th>Product Name</th>
               <th>Quality</th>
               <th>Price (VND)</th>
@@ -36,7 +40,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="text-center" *ngFor="let item of orderlists | slice:startitemshow:startitemshow+pagesize ">
+            <tr class="text-center" *ngFor="let item of filterOrderLists() | slice:startitemshow:startitemshow+pagesize">
               <td>{{item.OrderID}}</td>
               <td class="text-start">{{item.ProductName | uppercase}}</td>
               <td>{{item.Quality}}</td>
@@ -86,7 +90,7 @@
         <div class="float-end">
           <label for="">Display:&nbsp;</label>
           <select style="height: 1.5rem;" name="" id="pageSize" class=" mt-0 p-0" [(ngModel)]="pagesize"
-            convert-to-number (ngModelChange)="repaginate()" [value]="pagesize" [ngModelOptions]="{standalone: true}">
+           (ngModelChange)="repaginate()" [value]="pagesize" [ngModelOptions]="{standalone: true}">
             <option value="50">50</option>
             <option value="100">100</option>
             <option value="200">200</option>

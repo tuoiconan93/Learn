@@ -3,18 +3,22 @@
         <div class="card">
             <div class="card-header">
                 <div class="rows h2 text-center">SERVICES LIST RIEKER VIETNAM</div>
-                <div class="rows float-end">
-                    <label class="" for="">Search:&nbsp;</label>
-                    <input class="input-group w-50 d-inline" type="text" [(ngModel)]="search" placeholder="keyword"
+                <div class="rows">
+                    <div class="float-start">
+                      <button class="btn btn-primary"><fa-icon [icon]="faPlusCircle"></fa-icon>New</button>
+                    </div>
+                    <div class="float-end">
+                      <label class="" for="">Search:&nbsp;</label>
+                      <input class="input-group w-50 d-inline" type="text" [(ngModel)]="search" placeholder="keyword"
                         [ngModelOptions]="{standalone: true}">
-                </div>
+                    </div>
+                  </div>
             </div>
             <div class="card-body table-overflow-y table-responsive">
                 <table class=" table table-striped table-inverse">
                     <thead class="text-center table-dark">
                         <tr>
-                            <th>NO<br><i ng-click="sortBy('No')" class="fa-solid fa-arrow-up"></i><i
-                                    ng-click="sortBy('-No')" class="fa-solid fa-arrow-down"></i> </th>
+                            <th>NO<br><a (click)="toggleSortservice()" ><i  class="fa-solid fa-arrow-up d-inline"></i><i class="fa-solid fa-arrow-down d-inline"></i></a></th>
                             <th>SUPPLIER</th>
                             <th>DATE</th>
                             <th>DESCRIPTION</th>
@@ -28,7 +32,7 @@
                     </thead>
                     <tbody>
                         <tr class="text-center"
-                            *ngFor="let item of services | slice:startitemshow:startitemshow+pagesize ">
+                            *ngFor="let item of filteredservices() | slice:startitemshow:startitemshow+pagesize ">
                             <td>{{item.No}}</td>
                             <td>{{item.Supplier | uppercase}}</td>
                             <td>{{item.Date }}</td>

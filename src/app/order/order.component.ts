@@ -4,6 +4,7 @@ import {
   faBackwardStep,
   faForwardFast,
   faForwardStep,
+  faPlusCircle
 } from '@fortawesome/free-solid-svg-icons';
 import { HttpClient } from '@angular/common/http';
 
@@ -19,15 +20,18 @@ export class OrderComponent implements OnInit {
   public currentPage: number = 1;
   public pageCount: number = 0;
   public startitemshow: number=0;
+  public isDescending: boolean = true;
   faBackwardFast = faBackwardFast;
   faBackwardStep = faBackwardStep;
   faForwardFast = faForwardFast;
   faForwardStep = faForwardStep;
+  faPlusCircle=faPlusCircle;
   constructor(private http: HttpClient) {}
   //get data and tinh so luong trang
   public ngOnInit(): void {
     this.http.get('/assets/db/orderlist.json').subscribe((data: any) => {
       this.orderlists = data;
+      this.orderlists.sort((a, b) => b.OrderID - a.OrderID);
       this.pageCount = Math.ceil(this.orderlists.length / this.pagesize);
       this.updateStartItemShow();
     });
@@ -99,5 +103,43 @@ export class OrderComponent implements OnInit {
     this.pageCount = Math.ceil(this.orderlists.length / this.pagesize);
     this.updateStartItemShow();
   }
+  //loc theo orderID
+  toggleSortOrder(): void {
+    this.isDescending = !this.isDescending; // Đảo ngược thứ tự sắp xếp
+    this.orderlists.sort((a, b) => {
+      if (this.isDescending) {
+        return b.OrderID - a.OrderID; // Sắp xếp giảm dần theo OrderID
+      } else {
+        return a.OrderID - b.OrderID; // Sắp xếp tăng dần theo OrderID
+      }
+    });
+  }
+  public filterOrderLists(): any[] {
+    if (!this.search) {
+      this.pageCount = Math.ceil(this.orderlists.length / this.pagesize);
+      return this.orderlists; // Trả về mảng gốc nếu không có giá trị search
+    }
+    
+    const filteredOrderLists = this.orderlists.filter((item) => {
+      // Lặp qua từng thuộc tính của phần tử để tìm kiếm
+      for (const key in item) {
+        if (item.hasOwnProperty(key)) {
+          const value = item[key];
+          
+          // Kiểm tra nếu giá trị thuộc tính khớp với giá trị search
+          if (value.toString().toLowerCase().includes(this.search.toLowerCase())) {
+            return true; // Phần tử khớp, được giữ lại trong kết quả lọc
+          }
+        }
+      }
+      
+      return false; // Không có phần tử khớp, bị loại bỏ trong kết quả lọc
+    });
+    
+    this.pageCount = Math.ceil(filteredOrderLists.length / this.pagesize); // Tính lại số trang hiển thị
+    
+    return filteredOrderLists;
+  }
+  
   
 }
