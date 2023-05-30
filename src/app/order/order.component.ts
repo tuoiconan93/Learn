@@ -7,6 +7,7 @@ import {
   faPlusCircle
 } from '@fortawesome/free-solid-svg-icons';
 import { HttpClient } from '@angular/common/http';
+import { HttpServerService } from '../services/http-server.service';
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
@@ -25,14 +26,14 @@ export class OrderComponent implements OnInit {
   faForwardFast = faForwardFast;
   faForwardStep = faForwardStep;
   faPlusCircle=faPlusCircle;
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private getDataServer:HttpServerService) {}
   //get data and tinh so luong trang
   public ngOnInit(): void {
-    this.http.get('/assets/db/orderlist.json').subscribe((data: any) => {
-      this.orderlists = data;
-      this.orderlists.sort((a, b) => b.OrderID - a.OrderID);
-      this.pageCount = Math.ceil(this.orderlists.length / this.pagesize);
-      this.updateStartItemShow();
+    //get data tu service
+    this.getDataServer.getOrderList().subscribe((data)=>{
+      console.log('data',data);
+      this.orderlists=data;
+      this.orderlists.sort((a, b) => b.OrderID - a.OrderID);   
     });
   }
    //hien thi trang theo currenpage

@@ -2,7 +2,6 @@ import { Component,OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import{faSave,faCancel,faX} from '@fortawesome/free-solid-svg-icons'; 
-import { CommonService } from '../services/common.service';
 @Component({
   selector: 'app-neworder',
   templateUrl: './neworder.component.html',
@@ -10,7 +9,7 @@ import { CommonService } from '../services/common.service';
 })
 export class NeworderComponent implements OnInit {
   faSave=faSave; faCancel=faCancel;faX=faX;
-  public orderlists: any[]=[]
+  public orderlists=['phi long','sieu thanh','nguyen ha']
   public formData2 =this.formBuider.group({
     ProductName: ['', Validators.required],
     Quality: ['',Validators.required],
@@ -21,16 +20,9 @@ export class NeworderComponent implements OnInit {
     Location: ['',Validators.required],
     From: ['',Validators.required],
   });
-  constructor(private http: HttpClient, private formBuider: FormBuilder,private common:CommonService){}
+  constructor(private http: HttpClient, private formBuider: FormBuilder){}
   ngOnInit(): void {
-  this.orderlists=this.common.orderlists;
-  // console.log('lay tu service',this.orderlists);
-  // this.http.get('/assets/db/orderlist.json').subscribe((data:any) => {
-  //   this.orderlists=data;
-  //   console.log('lay tu json',this.orderlists);
-  // });
 
-  
   }
   public onSubmit(): void{
     

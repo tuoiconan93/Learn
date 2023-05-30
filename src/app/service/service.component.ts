@@ -7,6 +7,7 @@ import {
   faPlusCircle
 } from '@fortawesome/free-solid-svg-icons';
 import { HttpClient } from '@angular/common/http';
+import { HttpServerService } from '../services/http-server.service';
 
 @Component({
   selector: 'app-service',
@@ -26,14 +27,13 @@ export class ServiceComponent implements OnInit {
   faForwardFast = faForwardFast;
   faForwardStep = faForwardStep;
   faPlusCircle=faPlusCircle;
-  constructor(private http: HttpClient) {}
+  constructor(private getDataServer: HttpServerService) {}
   //get data and tinh so luong trang
   public ngOnInit(): void {
-    this.http.get('/assets/db/services.json').subscribe((data: any) => {
-      this.services = data;
-      this.services.sort((a, b) => b.No - a.No);
-      this.pageCount = Math.ceil(this.services.length / this.pagesize);
-      this.updateStartItemShow();
+    //get data tu service
+    this.getDataServer.getService().subscribe((data)=>{
+      this.services=data;
+      this.services.sort((a, b) => b.No - a.No);   
     });
   }
    //hien thi trang theo currenpage

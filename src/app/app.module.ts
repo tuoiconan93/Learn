@@ -14,7 +14,7 @@ import { ServiceComponent } from './service/service.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
 import { NeworderComponent } from './neworder/neworder.component';
-import { CommonService } from './services/common.service';
+import { HttpServerService } from './services/http-server.service';
 
 
 @NgModule({
@@ -38,7 +38,8 @@ import { CommonService } from './services/common.service';
     FontAwesomeModule,  
     ReactiveFormsModule
   ],
-  providers: [CommonService,
+  providers: [
+    HttpServerService,
   ],
   bootstrap: [AppComponent]
 })
