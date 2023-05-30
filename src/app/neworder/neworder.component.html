@@ -1,0 +1,88 @@
+<div class="container col-5 m-auto">
+    <form [formGroup]="formData2" (ngSubmit)="onSubmit();onReset()">
+        <div class="card">
+            <div class="card-header h2 text-center">
+                New Order
+                <a routerLink="/order" routerLinkActive="active" class="text-danger float-end" title="Back"><fa-icon
+                        [icon]="faX"></fa-icon></a>
+            </div>
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <label><span class="text-danger">*</span> Product Name:</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control w-auto" formControlName="ProductName">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <label><span class="text-danger">*</span>Quantity:</label>
+                    </div>
+                    <div class="col-6">
+                        <input [min]="1" type="number" class="form-control w-auto" formControlName="Quality">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <label>Price (VND):</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control w-auto" formControlName="PriceVND">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <label>Total (VND):</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control w-auto" formControlName="TotalVND">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <label><span class="text-danger">*</span>Category:</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control w-auto" formControlName="Category">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <label><span class="text-danger">*</span>Location:</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control w-auto" formControlName="Location">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <label><span class="text-danger">*</span>Department:</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control w-auto" formControlName="Department">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <label><span class="text-danger">*</span>From:</label>
+                    </div>
+                    <div class="col-6">
+                        <!-- <input type="text" class="form-control" formControlName="From"> -->
+                        <select name="" id="" class="form-select w-auto" formControlName="From">
+                            <option *ngFor="let sup of orderlists" [value]="sup">{{ sup |uppercase}}</option>
+                        </select>
+                        <span class="text-danger" *ngIf="formData2.invalid">* Please fill in
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-center">
+                <button [disabled]="!formData2.valid" class="btn btn-outline-primary me-1" type="submit">Save <fa-icon
+                        [icon]="faSave"></fa-icon></button>
+                <button class="btn btn-outline-danger me-1" (click)="onReset()">Cancel <fa-icon
+                        [icon]="faCancel"></fa-icon></button>
+            </div>
+        </div>
+    </form>
+</div>

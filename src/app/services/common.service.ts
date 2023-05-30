@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-
+import { Injectable, OnInit } from '@angular/core';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class CommonService {
-  constructor() { }
+export class CommonService{
+  public orderlists: string[]= ['nguyen ha','phi long','sieu thanh'];
+  constructor() {}
 }

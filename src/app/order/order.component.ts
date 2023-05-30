@@ -7,7 +7,6 @@ import {
   faPlusCircle
 } from '@fortawesome/free-solid-svg-icons';
 import { HttpClient } from '@angular/common/http';
-
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',

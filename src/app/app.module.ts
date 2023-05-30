@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import{FormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +13,8 @@ import { OrderComponent } from './order/order.component';
 import { ServiceComponent } from './service/service.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
+import { NeworderComponent } from './neworder/neworder.component';
+import { CommonService } from './services/common.service';
 
 
 @NgModule({
@@ -23,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
     OrderComponent,
     ServiceComponent,
     FooterComponent,
+    NeworderComponent,
     
   ],
   imports: [
@@ -31,9 +35,11 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     HttpClientModule,
     RouterModule,
-    FontAwesomeModule
+    FontAwesomeModule,  
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [CommonService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
