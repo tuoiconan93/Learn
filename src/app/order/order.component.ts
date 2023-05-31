@@ -30,10 +30,9 @@ export class OrderComponent implements OnInit {
   //get data and tinh so luong trang
   public ngOnInit(): void {
     //get data tu service
-    this.getDataServer.getOrderList().subscribe((data)=>{
-      console.log('data',data);
+    this.getDataServer.getdataAPI('OrderList').subscribe((data)=>{
       this.orderlists=data;
-      this.orderlists.sort((a, b) => b.OrderID - a.OrderID);   
+      this.orderlists.sort((a, b) => b.id - a.id);   
     });
   }
    //hien thi trang theo currenpage
@@ -103,14 +102,14 @@ export class OrderComponent implements OnInit {
     this.pageCount = Math.ceil(this.orderlists.length / this.pagesize);
     this.updateStartItemShow();
   }
-  //loc theo orderID
+  //loc theo id
   toggleSortOrder(): void {
     this.isDescending = !this.isDescending; // Đảo ngược thứ tự sắp xếp
     this.orderlists.sort((a, b) => {
       if (this.isDescending) {
-        return b.OrderID - a.OrderID; // Sắp xếp giảm dần theo OrderID
+        return b.id - a.id; // Sắp xếp giảm dần theo id
       } else {
-        return a.OrderID - b.OrderID; // Sắp xếp tăng dần theo OrderID
+        return a.id - b.id; // Sắp xếp tăng dần theo id
       }
     });
   }

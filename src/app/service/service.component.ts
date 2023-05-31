@@ -31,9 +31,9 @@ export class ServiceComponent implements OnInit {
   //get data and tinh so luong trang
   public ngOnInit(): void {
     //get data tu service
-    this.getDataServer.getService().subscribe((data)=>{
+    this.getDataServer.getdataAPI('Services').subscribe((data)=>{
       this.services=data;
-      this.services.sort((a, b) => b.No - a.No);   
+      this.services.sort((a, b) => b.id - a.id);   
     });
   }
    //hien thi trang theo currenpage
@@ -108,9 +108,9 @@ export class ServiceComponent implements OnInit {
     this.isDescending = !this.isDescending; // Đảo ngược thứ tự sắp xếp
     this.services.sort((a, b) => {
       if (this.isDescending) {
-        return b.No - a.No; // Sắp xếp giảm dần theo OrderID
+        return b.id - a.id; // Sắp xếp giảm dần theo OrderID
       } else {
-        return a.No - b.No; // Sắp xếp tăng dần theo OrderID
+        return a.id - b.id; // Sắp xếp tăng dần theo OrderID
       }
     });
     this.currentPage = 1;

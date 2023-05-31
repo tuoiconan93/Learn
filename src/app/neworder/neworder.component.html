@@ -1,5 +1,5 @@
-<div class="container col-5 m-auto">
-    <form [formGroup]="formData2" (ngSubmit)="onSubmit();onReset()">
+<div class="container col-6 m-auto">
+    <form [formGroup]="formOrder">
         <div class="card">
             <div class="card-header h2 text-center">
                 New Order
@@ -7,7 +7,8 @@
                         [icon]="faX"></fa-icon></a>
             </div>
             <div class="card-body">
-                <div class="row justify-content-center">
+
+                <div class="row m-auto mt-1">
                     <div class="col-3">
                         <label><span class="text-danger">*</span> Product Name:</label>
                     </div>
@@ -15,7 +16,7 @@
                         <input type="text" class="form-control w-auto" formControlName="ProductName">
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row m-auto mt-1">
                     <div class="col-3">
                         <label><span class="text-danger">*</span>Quantity:</label>
                     </div>
@@ -23,39 +24,46 @@
                         <input [min]="1" type="number" class="form-control w-auto" formControlName="Quality">
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row m-auto mt-1">
                     <div class="col-3">
                         <label>Price (VND):</label>
                     </div>
                     <div class="col-6">
-                        <input type="text" class="form-control w-auto" formControlName="PriceVND">
+                        <input type="number" [min]="0" class="form-control w-auto" formControlName="PriceVND">
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row m-auto mt-1 ">
                     <div class="col-3">
                         <label>Total (VND):</label>
                     </div>
                     <div class="col-6">
-                        <input type="text" class="form-control w-auto" formControlName="TotalVND">
+                        <input type="number" [min]="0" class="form-control w-auto" formControlName="TotalVND">
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row m-auto mt-1">
                     <div class="col-3">
                         <label><span class="text-danger">*</span>Category:</label>
                     </div>
                     <div class="col-6">
-                        <input type="text" class="form-control w-auto" formControlName="Category">
+                        <!-- <input type="text" class="form-control w-auto" formControlName="Category"> -->
+                        <select name="" id="" class="form-select w-auto" formControlName="Category">
+                            <option *ngFor="let cat of Category" [value]="cat">{{ cat |uppercase}}</option>
+                        </select>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row m-auto mt-1">
                     <div class="col-3">
                         <label><span class="text-danger">*</span>Location:</label>
                     </div>
-                    <div class="col-6">
-                        <input type="text" class="form-control w-auto" formControlName="Location">
+                    <div class="col-6 mt-1">
+                        <!-- <input type="text" class="form-control w-auto" formControlName="Location">
+                         -->
+                        <select name="" id="" class="form-select w-auto" formControlName="Location">
+                            <option *ngFor="let loca of location" [value]="loca">{{ loca |uppercase}}</option>
+                        </select>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row m-auto mt-1">
                     <div class="col-3">
                         <label><span class="text-danger">*</span>Department:</label>
                     </div>
@@ -63,23 +71,30 @@
                         <input type="text" class="form-control w-auto" formControlName="Department">
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-3">
-                        <label><span class="text-danger">*</span>From:</label>
+                <div class="row m-auto mt-1">
+                    <div class="col-3 d-inline">
+                        <label><span class="text-danger d-inline">*</span>From:</label>
                     </div>
-                    <div class="col-6">
-                        <!-- <input type="text" class="form-control" formControlName="From"> -->
-                        <select name="" id="" class="form-select w-auto" formControlName="From">
-                            <option *ngFor="let sup of orderlists" [value]="sup">{{ sup |uppercase}}</option>
+                    <div class="col-8">
+                        <select name="" id="" class="form-select w-auto d-inline" formControlName="From">
+                            <option *ngFor="let sup of supplier" [value]="sup.Name">{{ sup.Name |uppercase}}</option>
                         </select>
-                        <span class="text-danger" *ngIf="formData2.invalid">* Please fill in
-                        </span>
+                        <a (click)="shownewsupplier = true" class="btn d-inline text-primary"><fa-icon [icon]="faPlusCircle"></fa-icon></a>
+                        <div *ngIf="shownewsupplier" class="d-inline">
+                            <a (click)="shownewsupplier = false" class="btn d-inline text-danger"><fa-icon [icon]="faChevronCircleLeft"></fa-icon></a>
+                            <input type="text" class="w-auto d-inline form-control" formControlName="newSupplier">
+                            <button [disabled]="formOrder.controls['newSupplier'].invalid" (click)="postSupplier();shownewsupplier=false;formOrder.controls['newSupplier'].setValue('')" class=" btn btn-outline-primary">Save</button>
+                        </div>
+
                     </div>
                 </div>
+                <div class="row"><span class="text-danger text-center" *ngIf="formOrder.invalid">* Please fill in
+                    </span></div>
+
             </div>
             <div class="card-footer text-center">
-                <button [disabled]="!formData2.valid" class="btn btn-outline-primary me-1" type="submit">Save <fa-icon
-                        [icon]="faSave"></fa-icon></button>
+                <button [disabled]="!formOrder.valid" (click)="onSubmit();onReset()"
+                    class="btn btn-outline-primary me-1" type="submit">Save <fa-icon [icon]="faSave"></fa-icon></button>
                 <button class="btn btn-outline-danger me-1" (click)="onReset()">Cancel <fa-icon
                         [icon]="faCancel"></fa-icon></button>
             </div>

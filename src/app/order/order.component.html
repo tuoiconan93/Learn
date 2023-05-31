@@ -9,7 +9,7 @@
           </div>
           <div class="float-end">
             <label class="" for="">Search:&nbsp;</label>
-            <input class="input-group w-50 d-inline" type="text" [(ngModel)]="search" placeholder="keyword"
+            <input class="form-control w-50 d-inline" type="text" [(ngModel)]="search" placeholder="keyword"
               [ngModelOptions]="{standalone: true}">
           </div>
         </div>
@@ -41,7 +41,7 @@
           </thead>
           <tbody>
             <tr class="text-center" *ngFor="let item of filterOrderLists() | slice:startitemshow:startitemshow+pagesize">
-              <td>{{item.OrderID}}</td>
+              <td>{{item.id}}</td>
               <td class="text-start">{{item.ProductName | uppercase}}</td>
               <td>{{item.Quality}}</td>
               <td>{{item.PriceVND | currency:'VND'}}</td>
