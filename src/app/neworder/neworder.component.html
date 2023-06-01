@@ -1,5 +1,5 @@
 <div class="container col-6 m-auto">
-    <form [formGroup]="formOrder">
+    <form [formGroup]="formOrder" (ngSubmit)="onSubmit();onReset()">
         <div class="card">
             <div class="card-header h2 text-center">
                 New Order
@@ -83,9 +83,18 @@
                         <div *ngIf="shownewsupplier" class="d-inline">
                             <a (click)="shownewsupplier = false" class="btn d-inline text-danger"><fa-icon [icon]="faChevronCircleLeft"></fa-icon></a>
                             <input type="text" class="w-auto d-inline form-control" formControlName="newSupplier">
-                            <button [disabled]="formOrder.controls['newSupplier'].invalid" (click)="postSupplier();shownewsupplier=false;formOrder.controls['newSupplier'].setValue('')" class=" btn btn-outline-primary">Save</button>
+                            <button [disabled]="formOrder.controls['newSupplier'].invalid" (click)="postSupplier();shownewsupplier=false;formOrder.controls['newSupplier'].setValue('')" class=" btn btn-outline-primary d-inline">Save</button>
                         </div>
 
+                    </div>
+                </div>
+                <div class="row m-auto mt-1">
+                    <div class="col-3">
+                        <label><span class="text-danger d-inline">  </span>Select Date:</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control w-auto   " placeholder="Select Date"  bsDatepicker formControlName="selectdate">
+                        
                     </div>
                 </div>
                 <div class="row"><span class="text-danger text-center" *ngIf="formOrder.invalid">* Please fill in
@@ -93,7 +102,7 @@
 
             </div>
             <div class="card-footer text-center">
-                <button [disabled]="!formOrder.valid" (click)="onSubmit();onReset()"
+                <button [disabled]="formOrder.invalid" 
                     class="btn btn-outline-primary me-1" type="submit">Save <fa-icon [icon]="faSave"></fa-icon></button>
                 <button class="btn btn-outline-danger me-1" (click)="onReset()">Cancel <fa-icon
                         [icon]="faCancel"></fa-icon></button>

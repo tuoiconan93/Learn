@@ -15,6 +15,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
 import { NeworderComponent } from './neworder/neworder.component';
 import { HttpServerService } from './services/http-server.service';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -36,10 +39,13 @@ import { HttpServerService } from './services/http-server.service';
     HttpClientModule,
     RouterModule,
     FontAwesomeModule,  
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BsDatepickerModule,
+    BrowserAnimationsModule,
+    NgbModule,
   ],
   providers: [
-    HttpServerService,
+    HttpServerService
   ],
   bootstrap: [AppComponent]
 })

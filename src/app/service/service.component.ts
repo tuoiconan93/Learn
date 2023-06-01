@@ -4,9 +4,10 @@ import {
   faBackwardStep,
   faForwardFast,
   faForwardStep,
-  faPlusCircle
+  faPlusCircle,
+  faEdit,
+  faTrash,
 } from '@fortawesome/free-solid-svg-icons';
-import { HttpClient } from '@angular/common/http';
 import { HttpServerService } from '../services/http-server.service';
 
 @Component({
@@ -22,15 +23,21 @@ export class ServiceComponent implements OnInit {
   public pageCount: number = 0;
   public startitemshow: number=0;
   public isDescending: boolean = true;
+  //fa-icon
   faBackwardFast = faBackwardFast;
   faBackwardStep = faBackwardStep;
   faForwardFast = faForwardFast;
   faForwardStep = faForwardStep;
   faPlusCircle=faPlusCircle;
+  faEdit=faEdit;
+  faTrash=faTrash;
   constructor(private getDataServer: HttpServerService) {}
   //get data and tinh so luong trang
   public ngOnInit(): void {
     //get data tu service
+    this.getService();
+  }
+  public getService(): void{
     this.getDataServer.getdataAPI('Services').subscribe((data)=>{
       this.services=data;
       this.services.sort((a, b) => b.id - a.id);   
@@ -145,6 +152,12 @@ export class ServiceComponent implements OnInit {
     }  
     return filteredservices;
   }
-  
+  public deleteService(id: number): void {
+    const url = `Services/${id}`; // Đặt URL phù hợp với API của bạn
+    this.getDataServer.deleteDataAPI(url).subscribe(data => {
+    this.getService();
+      // Thực hiện các hành động phù hợp sau khi xóa thành công
+    });
+  }
 
 }

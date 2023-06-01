@@ -4,9 +4,9 @@ import {
   faBackwardStep,
   faForwardFast,
   faForwardStep,
-  faPlusCircle
+  faPlusCircle,faEdit,
+  faTrash,
 } from '@fortawesome/free-solid-svg-icons';
-import { HttpClient } from '@angular/common/http';
 import { HttpServerService } from '../services/http-server.service';
 @Component({
   selector: 'app-order',
@@ -26,9 +26,14 @@ export class OrderComponent implements OnInit {
   faForwardFast = faForwardFast;
   faForwardStep = faForwardStep;
   faPlusCircle=faPlusCircle;
-  constructor(private http: HttpClient, private getDataServer:HttpServerService) {}
+  faEdit=faEdit;
+  faTrash=faTrash;
+  constructor( private getDataServer:HttpServerService) {}
   //get data and tinh so luong trang
   public ngOnInit(): void {
+    this.getOrderList();
+  }
+  public getOrderList(): void{
     //get data tu service
     this.getDataServer.getdataAPI('OrderList').subscribe((data)=>{
       this.orderlists=data;
@@ -143,5 +148,11 @@ export class OrderComponent implements OnInit {
     return filteredOrderLists;
   }
   
-  
+  public deleteOrder(id: number): void {
+    const url = `OrderList/${id}`; // Đặt URL phù hợp với API của bạn
+    this.getDataServer.deleteDataAPI(url).subscribe(data => {
+    });
+    this.getOrderList();
+      // Thực hiện các hành động phù hợp sau khi xóa thành công
+  }
 }

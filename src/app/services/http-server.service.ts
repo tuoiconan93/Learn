@@ -26,4 +26,8 @@ export class HttpServerService{
     const fullurl=`${this.REST_API_SERVER}${url}`;
     return this.httpClient.post<any>(fullurl,payload,this.httpOptions);
   }
+  public deleteDataAPI(url: string): Observable<any> {
+    const fullurl = `${this.REST_API_SERVER}${url}`;
+    return this.httpClient.delete<any>(fullurl, this.httpOptions);
+  }
 }

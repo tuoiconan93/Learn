@@ -5,20 +5,22 @@
                 <div class="rows h2 text-center">SERVICES LIST RIEKER VIETNAM</div>
                 <div class="rows">
                     <div class="float-start">
-                      <button class="btn btn-primary"><fa-icon [icon]="faPlusCircle"></fa-icon>New</button>
+                        <button class="btn btn-primary"><fa-icon [icon]="faPlusCircle"></fa-icon>New</button>
                     </div>
                     <div class="float-end">
-                      <label class="" for="">Search:&nbsp;</label>
-                      <input class="input-group w-50 d-inline" type="text" [(ngModel)]="search" placeholder="keyword"
-                        [ngModelOptions]="{standalone: true}">
+                        <label class="" for="">Search:&nbsp;</label>
+                        <input class="input-group w-50 d-inline" type="text" [(ngModel)]="search" placeholder="keyword"
+                            [ngModelOptions]="{standalone: true}">
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="card-body table-overflow-y table-responsive">
                 <table class=" table table-striped table-inverse">
                     <thead class="text-center table-dark">
                         <tr>
-                            <th>NO<br><a (click)="toggleSortservice()" ><i  class="fa-solid fa-arrow-up d-inline"></i><i class="fa-solid fa-arrow-down d-inline"></i></a></th>
+                            <th>&nbsp;</th>
+                            <th>NO<br><a (click)="toggleSortservice()"><i class="fa-solid fa-arrow-up d-inline"></i><i
+                                        class="fa-solid fa-arrow-down d-inline"></i></a></th>
                             <th>SUPPLIER</th>
                             <th>DATE</th>
                             <th>DESCRIPTION</th>
@@ -33,6 +35,38 @@
                     <tbody>
                         <tr class="text-center"
                             *ngFor="let item of filteredservices() | slice:startitemshow:startitemshow+pagesize ">
+                            <td>
+                                <div class="d-flex d-inline">
+                                <button class="btn text-warning d-inline"><fa-icon [icon]="faEdit"></fa-icon></button>
+                                <!-- Button trigger modal -->
+                                <button  class="btn text-danger d-inline" type="button"   data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    <fa-icon
+                                    [icon]="faTrash"></fa-icon>
+                                </button>
+                            </div>  
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Item</h1>
+                                                <button type="button" class="btn-close text-bg-danger"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Are you sure delete it?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button data-bs-dismiss="modal" (click)="deleteService(item.id)" type="button" class="btn btn-primary">Delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                             <td>{{item.id}}</td>
                             <td>{{item.Supplier | uppercase}}</td>
                             <td>{{item.Date }}</td>
