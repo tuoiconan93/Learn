@@ -97,15 +97,21 @@
                         
                     </div>
                 </div>
+                <div class="row m-auto mt-1">
+                    <div class="col-3">
+                        <label><span class="text-danger d-inline">  </span>Note:</label>
+                    </div>
+                    <div class="col-6">
+                       <textarea name="" id=""class="form-control w-auto" formControlName="Notes"></textarea>
+                    </div>
+                </div>
                 <div class="row"><span class="text-danger text-center" *ngIf="formOrder.invalid">* Please fill in
                     </span></div>
 
             </div>
             <div class="card-footer text-center">
-                <button [disabled]="formOrder.invalid" 
-                    class="btn btn-outline-primary me-1" type="submit">Save <fa-icon [icon]="faSave"></fa-icon></button>
-                <button class="btn btn-outline-danger me-1" (click)="onReset()">Cancel <fa-icon
-                        [icon]="faCancel"></fa-icon></button>
+                <button routerLink="/order" routerLinkActive="active" [disabled]="formOrder.invalid"  class="btn btn-outline-primary me-1" type="submit">Save <fa-icon [icon]="faSave"></fa-icon></button>
+                <button class="btn btn-outline-danger me-1" (click)="onReset(); $event.preventDefault()">Cancel <fa-icon [icon]="faCancel"></fa-icon></button>
             </div>
         </div>
     </form>

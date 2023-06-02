@@ -111273,18 +111273,30 @@
       "From": "Phi Long"
     },
     {
-      "ProductName": "1",
+      "ProductName": "test note",
       "Quality": 2,
       "PriceVND": "",
-      "TotalVND": null,
-      "Category": "computer",
+      "TotalVND": "",
+      "Category": "Cartridge",
       "Location": "Quang Nam",
-      "Department": "qưqe",
-      "From": "Phi Long",
-      "newSupplier": "",
-      "OrderDate": "6/1/2023",
-      "selectdate": "",
+      "Department": "sfd",
+      "From": "Nguyen Ha",
+      "OrderDate": "6/2/2023",
+      "Note": "abcdefghlkajsdlfjlsjfsd",
       "id": 7946
+    },
+    {
+      "ProductName": "123444555678678sfsdfdsfdf",
+      "Quality": 5,
+      "PriceVND": "",
+      "TotalVND": "",
+      "Category": "computer",
+      "Location": "Quang Ngai",
+      "Department": "adasdsd",
+      "From": "Sieu Thanh",
+      "OrderDate": "6/2/2023",
+      "Notes": "ádkfhfklsdjhflksdjfd",
+      "id": 7947
     }
   ],
   "Services": [
@@ -116984,6 +116996,10 @@
     {
       "id": 3,
       "Name": "Nguyen Ha"
+    },
+    {
+      "Name": "Civip",
+      "id": 4
     }
   ]
 }

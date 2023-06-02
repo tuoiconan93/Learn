@@ -17,7 +17,6 @@ import { NeworderComponent } from './neworder/neworder.component';
 import { HttpServerService } from './services/http-server.service';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -42,7 +41,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     BsDatepickerModule,
     BrowserAnimationsModule,
-    NgbModule,
   ],
   providers: [
     HttpServerService

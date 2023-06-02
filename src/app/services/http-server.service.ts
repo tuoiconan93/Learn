@@ -30,4 +30,8 @@ export class HttpServerService{
     const fullurl = `${this.REST_API_SERVER}${url}`;
     return this.httpClient.delete<any>(fullurl, this.httpOptions);
   }
+  public editDataAPI(url: string, payload:any): Observable<any> {
+    const fullurl = `${this.REST_API_SERVER}${url}`;
+    return this.httpClient.patch<any>(fullurl,payload,this.httpOptions);
+  }
 }

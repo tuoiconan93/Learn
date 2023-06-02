@@ -1,3 +1,4 @@
+
 <div>
     <div class="card">
       <div class="card-header">
@@ -14,17 +15,17 @@
         </div>
       </div>
       <div class="card-body table-overflow-y table-responsive">
-        <table class=" table table-striped table-inverse">
+        <table class="table table-striped table-inverse">
           <thead class="text-center table-dark">
             <tr>
               <th>&nbsp;</th>
-              <th> Order ID <br><a (click)="toggleSortOrder()" ><i  class="fa-solid fa-arrow-up d-inline"></i><i class="fa-solid fa-arrow-down d-inline"></i></a></th>
+              <th>Order ID</th>
               <th>Product Name</th>
-              <th>Quality</th>
+              <th>Quantity</th>
               <th>Price (VND)</th>
               <th>Total (VND)</th>
               <th>Price (USD)</th>
-              <th>Total (USD) </th>
+              <th>Total (USD)</th>
               <th>Order Date</th>
               <th>Delivery Date</th>
               <th>Category</th>
@@ -42,44 +43,55 @@
           <tbody>
             <tr class="text-center" *ngFor="let item of filterOrderLists() | slice:startitemshow:startitemshow+pagesize">
               <td>
-                <div class="d-flex d-inline">
-                <button class="btn text-warning d-inline"><fa-icon [icon]="faEdit"></fa-icon></button>
-                <!-- Button trigger modal -->
-                <button  class="btn text-danger d-inline" type="button"   data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    <fa-icon
-                    [icon]="faTrash"></fa-icon>
-                </button>
-            </div>  
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1"
-                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Item</h1>
-                                <button type="button" class="btn-close text-bg-danger"
-                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Are you sure delete it?
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Close</button>
-                                <button data-bs-dismiss="modal" (click)="deleteOrder(item.id)" type="button" class="btn btn-primary">Delete</button>
-                            </div>
-                        </div>
-                    </div>
+                <div *ngIf="!item.editingMode" class="d-inline d-flex">
+                  <button class="btn text-warning d-inline" (click)="toggleEditingMode(item);editOrder(item.id)">
+                    <fa-icon [icon]="faEdit"></fa-icon>
+                  </button>
+                  <button class="btn text-danger d-inline" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <fa-icon [icon]="faTrash"></fa-icon>
+                  </button>
                 </div>
-            </td>
+                <div *ngIf="item.editingMode">
+                  <button class="btn text-success d-inline" (click)="toggleEditingMode(item);updateData()">
+                    <fa-icon [icon]="faSave"></fa-icon>
+                  </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Item</h1>
+                        <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Are you sure you want to delete it?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button data-bs-dismiss="modal" (click)="deleteOrder(item.id)" type="button" class="btn btn-primary">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
               <td>{{item.id}}</td>
-              <td class="text-start">{{item.ProductName | uppercase}}</td>
-              <td>{{item.Quality}}</td>
+              <td>
+                <div class="text-start" *ngIf="!item.editingMode">{{item.ProductName | uppercase}}</div>
+                <div *ngIf="item.editingMode">
+                  <input type="text" [(ngModel)]="edits.ProductName" class="form-control">
+                </div>
+              </td>
+              <td>
+                <div *ngIf="!item.editingMode">{{item.Quality}}</div>
+                <div *ngIf="item.editingMode">
+                  <input type="number" [(ngModel)]="edits.Quality" class="form-control">
+                </div>
+              </td>
               <td>{{item.PriceVND | currency:'VND'}}</td>
-              <td>{{item.TotalVND|currency:'VND'}}</td>
-              <td>{{item.PriceUSD|currency}}</td>
-              <td>{{item.Total|currency}}</td>
+              <td>{{item.TotalVND | currency:'VND'}}</td>
+              <td>{{item.PriceUSD | currency}}</td>
+              <td>{{item.Total | currency}}</td>
               <td>{{item.OrderDate | date:'dd/MM/yyyy'}}</td>
               <td>{{item.DeliveryDate | date:'dd/MM/yyyy'}}</td>
               <td>{{item.Category}}</td>
@@ -90,13 +102,17 @@
               <td>{{item.Location}}</td>
               <td>{{item.From}}</td>
               <td>{{item.RecInvoiceNo}}</td>
-              <td>{{item.InvoiceDate | date:'dd/MM/yyyy'  }}</td>
+              <td>{{item.InvoiceDate | date:'dd/MM/yyyy'}}</td>
               <td>
-                <textarea readonly name="" id="" cols="30" rows="1">{{item.Notes}}</textarea>
+                <div *ngIf="!item.editingMode"><textarea  cols="30" rows="1" readonly>{{item.Notes}}</textarea></div>
+                <div *ngIf="item.editingMode">
+                  <textarea cols="30" rows="1" [(ngModel)]="edits.Notes" class="form-control"></textarea>
+                </div>
               </td>
             </tr>
           </tbody>
         </table>
+        
       </div>
       <div class="card-footer align-content-center">
         <ul class="pagination justify-content-center text-center">
