@@ -45,10 +45,10 @@
             <tr  *ngFor="let item of filterOrderLists() | slice:startitemshow:enditemshow">
               <td>
                 <div *ngIf="!item.editingMode" class="d-inline d-flex">
-                  <a class="btn text-warning d-inline" (click)="toggleEditingMode(item);editOrder(item.id)">
+                  <a class="btn text-warning d-inline" (click)="toggleEditingMode(item);editOrder(item.id);$event.preventDefault()">
                     <fa-icon [icon]="faEdit"></fa-icon>
                   </a>
-                  <a class="btn text-danger d-inline" type="button" (click)="deleteOrder(item.id)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <a class="btn text-danger d-inline" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <fa-icon [icon]="faTrash"></fa-icon>
                   </a>
                 </div>
@@ -70,7 +70,7 @@
                       </div>
                       <div class="modal-footer">
                         <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
-                        <a data-bs-dismiss="modal" (click)="deleteOrder(item.id)" type="button" class="btn btn-primary">Delete</a>
+                        <a data-bs-dismiss="modal" (click)="deleteOrder(item.id);getOrderList();$event.preventDefault()"  class="btn btn-primary">Delete</a>
                       </div>
                     </div>
                   </div>
