@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import {
   faBackwardFast,
   faBackwardStep,
@@ -23,6 +24,7 @@ export class OrderComponent implements OnInit {
   public currentPage: number = 1;
   public pageCount: number = 0;
   public startitemshow: number=0;
+  public enditemshow: number=0;
   public isDescending: boolean = true;
   faBackwardFast = faBackwardFast;
   faBackwardStep = faBackwardStep;
@@ -34,7 +36,6 @@ export class OrderComponent implements OnInit {
   faSave=faSave;
   faRefresh=faRefresh;
   constructor( private getDataServer:HttpServerService, private formBuider: FormBuilder) {}
-  //get data and tinh so luong trang
   public ngOnInit(): void {
     this.getOrderList();
   }
@@ -42,12 +43,14 @@ export class OrderComponent implements OnInit {
     //get data tu service
     this.getDataServer.getdataAPI('OrderList').subscribe((data)=>{
       this.orderlists=data;
-      this.orderlists.sort((a, b) => b.id - a.id);   
+      this.orderlists.sort((a, b) => b.id - a.id); 
     });
   }
    //hien thi trang theo currenpage
    public updateStartItemShow(): void {
     this.startitemshow = (this.currentPage - 1) * this.pagesize;
+    this.enditemshow=this.startitemshow+this.pagesize;
+
   }
   //tinh trang hien tai
   public getPages(): number[] {
@@ -68,7 +71,7 @@ export class OrderComponent implements OnInit {
   //trang hien tai bang page show
   public setcurrentPage(page: number): void {
     this.currentPage = page;
-    this.updateStartItemShow();
+    this.updateStartItemShow(); 
   }
   previous10Page(): void {
     if (this.currentPage > 10) {
@@ -109,6 +112,7 @@ export class OrderComponent implements OnInit {
   public repaginate(): void {
     this.startitemshow = 0;
     this.currentPage=1;
+    this.pagesize = parseInt(this.pagesize.toString(), 10);
     this.pageCount = Math.ceil(this.orderlists.length / this.pagesize);
     this.updateStartItemShow();
   }

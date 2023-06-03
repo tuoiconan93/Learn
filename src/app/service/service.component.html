@@ -106,7 +106,7 @@
                 <div class="float-end">
                     <label for="">Display:&nbsp;</label>
                     <select style="height: 1.5rem;" name="" id="pageSize" class=" mt-0 p-0" [(ngModel)]="pagesize"
-                        convert-to-number (ngModelChange)="repaginate()" [value]="pagesize"
+                        (ngModelChange)="repaginate()" [value]="pagesize"
                         [ngModelOptions]="{standalone: true}">
                         <option value="50">50</option>
                         <option value="100">100</option>

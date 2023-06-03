@@ -16,8 +16,7 @@
   import { NeworderComponent } from './neworder/neworder.component';
   import { HttpServerService } from './services/http-server.service';
   import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
-  import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
-
+  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
   @NgModule({
     declarations: [
@@ -29,7 +28,6 @@
       ServiceComponent,
       FooterComponent,
       NeworderComponent,
-      
     ],
     imports: [
       BrowserModule,

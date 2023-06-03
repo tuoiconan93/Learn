@@ -108,6 +108,7 @@ export class ServiceComponent implements OnInit {
   public repaginate(): void {
     this.startitemshow = 0;
     this.currentPage=1;
+    this.pagesize = parseInt(this.pagesize.toString(), 10);
     this.pageCount = Math.ceil(this.services.length / this.pagesize);
     this.updateStartItemShow();
   }

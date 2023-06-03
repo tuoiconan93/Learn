@@ -42,7 +42,7 @@
             </tr>
           </thead>
           <tbody class="text-center align-middle">
-            <tr  *ngFor="let item of filterOrderLists() | slice:startitemshow:startitemshow+pagesize">
+            <tr  *ngFor="let item of filterOrderLists() | slice:startitemshow:enditemshow">
               <td>
                 <div *ngIf="!item.editingMode" class="d-inline d-flex">
                   <a class="btn text-warning d-inline" (click)="toggleEditingMode(item);editOrder(item.id)">
@@ -140,13 +140,13 @@
         <div class="float-end">
           <label for="">Display:&nbsp;</label>
           <select style="height: 1.5rem;" name="" id="pageSize" class=" mt-0 p-0" [(ngModel)]="pagesize"
-           (ngModelChange)="repaginate()" [value]="pagesize" [ngModelOptions]="{standalone: true}">
-            <option value="50">50</option>
-            <option value="100">100</option>
-            <option value="200">200</option>
+               (ngModelChange)="repaginate()" [value]="pagesize"
+              [ngModelOptions]="{standalone: true}">
+              <option value="50">50</option>
+              <option value="100">100</option>
+              <option value="200">200</option>
           </select>
-
-        </div>
+      </div>
       </div>
     </div>
 </div>
