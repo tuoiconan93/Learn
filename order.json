@@ -111152,19 +111152,6 @@
       "From": "Phi Long"
     },
     {
-      "id": 7937,
-      "ProductName": "CARTRIDGE HP LASERJET 26A (CF226A) (FOR HP M402DM402NM402DN402DW)",
-      "Quality": 3,
-      " PriceVND ": 3290000,
-      " TotalVND ": 9870000,
-      "Total": 0,
-      "Category": "Cartridge",
-      "Department": "Suong-Pro-B",
-      "PO": " 20230411-11PL",
-      "Location": "Quang Nam",
-      "From": "Phi Long"
-    },
-    {
       "id": 7938,
       "ProductName": "WEBCAM NHAN DIEN KHUON MAT WINDOW HELLO",
       "Quality": 1,
@@ -111172,19 +111159,6 @@
       " TotalVND ": 990000,
       "Total": 0,
       "Category": "Webcam",
-      "Department": "Mr. Thai IT - E",
-      "PO": " 20230411-11PL",
-      "Location": "Quang Nam",
-      "From": "Phi Long"
-    },
-    {
-      "id": 7939,
-      "ProductName": "THANH LED NHOM 2 MAT RGB (4 pin, 40cm) 12V",
-      "Quality": 1,
-      " PriceVND ": 250000,
-      " TotalVND ": 250000,
-      "Total": 0,
-      "Category": "Components",
       "Department": "Mr. Thai IT - E",
       "PO": " 20230411-11PL",
       "Location": "Quang Nam",
@@ -111230,21 +111204,6 @@
       "PO": " 20230410-01QNINH",
       "Location": "Quang Ngai",
       "From": "Nguyen Ha"
-    },
-    {
-      "id": 7943,
-      "ProductName": "PRINT CARTRIDGE MP6054S   MỰC MP 6054S",
-      "Quality": 3,
-      " PriceVND ": 2971600,
-      " TotalVND ": 8914800,
-      "Total": 0,
-      "Category": "Cartridge",
-      "Department": "Van-BLV",
-      "PO": "20230412-02ST",
-      "Received": "Mr. Thai IT E",
-      "Location": "Quang Nam",
-      "From": "Sieu Thanh",
-      "InvoiceNo": 546
     }
   ],
   "Services": [

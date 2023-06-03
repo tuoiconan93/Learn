@@ -22,6 +22,7 @@ export class ServiceComponent implements OnInit {
   public currentPage: number = 1;
   public pageCount: number = 0;
   public startitemshow: number=0;
+  public enditemshow:number=0;
   public isDescending: boolean = true;
   //fa-icon
   faBackwardFast = faBackwardFast;
@@ -46,6 +47,7 @@ export class ServiceComponent implements OnInit {
    //hien thi trang theo currenpage
    public updateStartItemShow(): void {
     this.startitemshow = (this.currentPage - 1) * this.pagesize;
+    this.enditemshow=this.startitemshow+this.pagesize;
   }
   //tinh trang hien tai
   public getPages(): number[] {
@@ -67,7 +69,6 @@ export class ServiceComponent implements OnInit {
   public setcurrentPage(page: number): void {
     this.currentPage = page;
     this.updateStartItemShow();
-    console.log(this.currentPage);
   }
   previous10Page(): void {
     if (this.currentPage > 10) {

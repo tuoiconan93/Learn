@@ -48,7 +48,7 @@
                   <a class="btn text-warning d-inline" (click)="toggleEditingMode(item);editOrder(item.id)">
                     <fa-icon [icon]="faEdit"></fa-icon>
                   </a>
-                  <a class="btn text-danger d-inline" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <a class="btn text-danger d-inline" type="button" (click)="deleteOrder(item.id)" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <fa-icon [icon]="faTrash"></fa-icon>
                   </a>
                 </div>
@@ -94,7 +94,7 @@
               <td>{{item.TotalVND | currency:'VND'}}</td>
               <td>{{item.PriceUSD | currency}}</td>
               <td>{{item.Total | currency}}</td>
-              <td>{{item.OrderDate | date:'dd/MM/yyyy'}}</td>
+              <td>{{item.OrderDate | date:'dd/MM/yyyy-hh-mm-ss-a'}}</td>
               <td>{{item.DeliveryDate | date:'dd/MM/yyyy'}}</td>
               <td>{{item.Category}}</td>
               <td>{{item.Department}}</td>
