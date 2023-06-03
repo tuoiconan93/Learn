@@ -7,6 +7,7 @@ import {
   faPlusCircle,faEdit,
   faTrash,
   faSave,
+  faRefresh,
 } from '@fortawesome/free-solid-svg-icons';
 import { HttpServerService } from '../services/http-server.service';
 import { FormBuilder, Validators } from '@angular/forms';
@@ -31,6 +32,7 @@ export class OrderComponent implements OnInit {
   faEdit=faEdit;
   faTrash=faTrash;
   faSave=faSave;
+  faRefresh=faRefresh;
   constructor( private getDataServer:HttpServerService, private formBuider: FormBuilder) {}
   //get data and tinh so luong trang
   public ngOnInit(): void {
@@ -158,7 +160,7 @@ export class OrderComponent implements OnInit {
     this.getOrderList();
       // Thực hiện các hành động phù hợp sau khi xóa thành công
   }
-// không dùng form dùng ngmodel
+// dùng driven form sẽ dùng reactive form sau
 edits: {
   id: number;
   ProductName: string;
@@ -170,15 +172,6 @@ edits: {
   Quality: 0,
   Notes: ''
 };
-
-  
-
-  //tạo form mới để edit
-  // public formEdit = this.formBuider.group({
-  //   id:[''],
-  //   ProductName: [''],
-  //   Quality:[''],
-  // });
   // phương thức edit
   public editOrder(id: number): void {
     const url = `OrderList/${id}`; // Đặt URL phù hợp với API của bạn
@@ -190,12 +183,6 @@ edits: {
         Quality: data.Quality,
         Notes: data.Notes
       };
-
-      // this.formEdit.patchValue({
-      //   id:data.id,
-      //   ProductName: data.ProductName,
-      //   Quality: data.Quality
-      // });     
     });
   }
   //update dữ liệu chỉnh sửa gọi lại 
@@ -206,8 +193,7 @@ edits: {
     const url=`OrderList/${this.edits.id}`;
     // Gọi phương thức PUT hoặc PATCH để cập nhật dữ liệu
     this.getDataServer.editDataAPI(url, payload).subscribe(data => {
-      // Thực hiện các hành động phù hợp sau khi cập nhật thành công
-      this.getOrderList();     
+      // Thực hiện các hành động phù hợp sau khi cập nhật thành công 
     });
   }
   public toggleEditingMode(order: any): void {

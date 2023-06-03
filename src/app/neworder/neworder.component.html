@@ -1,5 +1,5 @@
 <div class="container col-6 m-auto">
-    <form [formGroup]="formOrder" (ngSubmit)="onSubmit();onReset()">
+    <form [formGroup]="formOrder">
         <div class="card">
             <div class="card-header h2 text-center">
                 New Order
@@ -79,30 +79,35 @@
                         <select name="" id="" class="form-select w-auto d-inline" formControlName="From">
                             <option *ngFor="let sup of supplier" [value]="sup.Name">{{ sup.Name |uppercase}}</option>
                         </select>
-                        <a (click)="shownewsupplier = true" class="btn d-inline text-primary"><fa-icon [icon]="faPlusCircle"></fa-icon></a>
+                        <a (click)="shownewsupplier = true" class="btn d-inline text-primary"><fa-icon
+                                [icon]="faPlusCircle"></fa-icon></a>
                         <div *ngIf="shownewsupplier" class="d-inline">
-                            <a (click)="shownewsupplier = false" class="btn d-inline text-danger"><fa-icon [icon]="faChevronCircleLeft"></fa-icon></a>
-                            <input type="text" class="w-auto d-inline form-control" formControlName="newSupplier">
-                            <button [disabled]="formOrder.controls['newSupplier'].invalid" (click)="postSupplier();shownewsupplier=false;formOrder.controls['newSupplier'].setValue('')" class=" btn btn-outline-primary d-inline">Save</button>
+                            <a (click)="shownewsupplier = false" class="btn d-inline text-danger"><fa-icon
+                                    [icon]="faChevronCircleLeft"></fa-icon></a>
+                            <input type="text" class="w-auto d-inline form-control" formControlName="newSupplier" placeholder="Type new supplier">
+                            <button [disabled]="formOrder.controls['newSupplier'].invalid"
+                                (click)="postSupplier();shownewsupplier=false;formOrder.controls['newSupplier'].setValue('')"
+                                class=" btn btn-outline-primary d-inline">Save</button>
                         </div>
 
                     </div>
                 </div>
                 <div class="row m-auto mt-1">
                     <div class="col-3">
-                        <label><span class="text-danger d-inline">  </span>Select Date:</label>
+                        <label><span class="text-danger d-inline"> </span>Select Date:</label>
                     </div>
                     <div class="col-6">
-                        <input type="text" class="form-control w-auto   " placeholder="Select Date"  bsDatepicker formControlName="selectdate">
-                        
+                        <input type="text" class="form-control w-auto   " placeholder="Select Date" bsDatepicker
+                            formControlName="selectdate">
+
                     </div>
                 </div>
                 <div class="row m-auto mt-1">
                     <div class="col-3">
-                        <label><span class="text-danger d-inline">  </span>Note:</label>
+                        <label><span class="text-danger d-inline"> </span>Note:</label>
                     </div>
                     <div class="col-6">
-                       <textarea name="" id=""class="form-control w-auto" formControlName="Notes"></textarea>
+                        <textarea name="" id="" class="form-control w-auto" formControlName="Notes"></textarea>
                     </div>
                 </div>
                 <div class="row"><span class="text-danger text-center" *ngIf="formOrder.invalid">* Please fill in
@@ -110,8 +115,11 @@
 
             </div>
             <div class="card-footer text-center">
-                <button routerLink="/order" routerLinkActive="active" [disabled]="formOrder.invalid"  class="btn btn-outline-primary me-1" type="submit">Save <fa-icon [icon]="faSave"></fa-icon></button>
-                <button class="btn btn-outline-danger me-1" (click)="onReset(); $event.preventDefault()">Cancel <fa-icon [icon]="faCancel"></fa-icon></button>
+                <button routerLink="/order" routerLinkActive="active" [disabled]="formOrder.invalid"
+                    class="btn btn-outline-primary me-1" (click)="onSubmit();onReset(); $event.preventDefault()">Save
+                    <fa-icon [icon]="faSave"></fa-icon></button>
+                <a class="btn btn-outline-danger me-1" (click)="onReset(); $event.preventDefault()">Cancel <fa-icon
+                        [icon]="faCancel"></fa-icon></a>
             </div>
         </div>
     </form>

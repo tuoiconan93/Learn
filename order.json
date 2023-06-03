@@ -2,7 +2,7 @@
   "OrderList": [
     {
       "id": 1,
-      "ProductName": "HP 43x",
+      "ProductName": "HP 43 x",
       "Quality": 20,
       " TotalVND ": 0,
       "PriceUSD": 296,
@@ -111248,7 +111248,7 @@
     },
     {
       "id": 7944,
-      "ProductName": "CARTRIDGE HP LASERJET CF276A BLACK (FOR\r\nM404DN/DW-MFP 428FDW)",
+      "ProductName": "CARTRIDGE HP LASERJET CF276A BLACK (FORM404DN/DW-MFP 428FDW)",
       "Quality": 2,
       " PriceVND ": 3290000,
       " TotalVND ": 6580000,
@@ -111261,8 +111261,8 @@
     },
     {
       "id": 7945,
-      "ProductName": "Khoi CPU i5 v13, B760I, 16GB, 500GB, U2422H",
-      "Quality": 1,
+      "ProductName": "234324324324",
+      "Quality": 2,
       " PriceVND ": 25860000,
       " TotalVND ": 25860000,
       "Total": 0,
@@ -111271,32 +111271,6 @@
       "PO": "20230412-14PL",
       "Location": "Quang Nam",
       "From": "Phi Long"
-    },
-    {
-      "ProductName": "test note",
-      "Quality": 2,
-      "PriceVND": "",
-      "TotalVND": "",
-      "Category": "Cartridge",
-      "Location": "Quang Nam",
-      "Department": "sfd",
-      "From": "Nguyen Ha",
-      "OrderDate": "6/2/2023",
-      "Note": "abcdefghlkajsdlfjlsjfsd",
-      "id": 7946
-    },
-    {
-      "ProductName": "123444555678678sfsdfdsfdf",
-      "Quality": 5,
-      "PriceVND": "",
-      "TotalVND": "",
-      "Category": "computer",
-      "Location": "Quang Ngai",
-      "Department": "adasdsd",
-      "From": "Sieu Thanh",
-      "OrderDate": "6/2/2023",
-      "Notes": "ádkfhfklsdjhflksdjfd",
-      "id": 7947
     }
   ],
   "Services": [
