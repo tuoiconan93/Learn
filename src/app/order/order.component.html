@@ -48,7 +48,7 @@
                   <a class="btn text-warning d-inline" (click)="toggleEditingMode(item);editOrder(item.id);$event.preventDefault()">
                     <fa-icon [icon]="faEdit"></fa-icon>
                   </a>
-                  <a class="btn text-danger d-inline" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <a class="btn text-danger d-inline" type="button"  data-bs-toggle="modal" [attr.data-bs-target]="'#exampleModal' + item.id">
                     <fa-icon [icon]="faTrash"></fa-icon>
                   </a>
                 </div>
@@ -58,7 +58,7 @@
                   </a>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" [id]="'exampleModal' + item.id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
