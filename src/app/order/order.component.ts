@@ -160,7 +160,6 @@ export class OrderComponent implements OnInit {
   public deleteOrder(id: number): void {
     const url = `OrderList/${id}`; // Đặt URL phù hợp với API của bạn
     this.getDataServer.deleteDataAPI(url).subscribe(data => {
-      console.log('item deleted: ',id)
     });
     this.getOrderList();
       // Thực hiện các hành động phù hợp sau khi xóa thành công
