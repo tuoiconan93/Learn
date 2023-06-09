@@ -17,22 +17,7 @@
   import { HttpServerService } from './services/http-server.service';
   import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
   import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-  // import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
   import { KeycloakService } from './services/keycloak.service';
-  // function initializeKeycloak(keycloak: KeycloakService) {
-  //   return () =>
-  //     keycloak.init({
-  //       config: {
-  //         url: 'https://localhost:8443',
-  //         realm: 'rieker',
-  //         clientId: 'orderrieker'
-  //       },
-  //       initOptions: {
-  //         onLoad: 'login-required',
-  //         flow:"standard"
-  //       }
-  //     });
-  // }
   @NgModule({
     declarations: [
       AppComponent,
@@ -60,12 +45,6 @@
     providers: [
       HttpServerService,
       KeycloakService,
-      // {
-      //   provide: APP_INITIALIZER,
-      //   useFactory: initializeKeycloak,
-      //   multi: true,
-      //   deps: [KeycloakService]
-      // }
     ],
     bootstrap: [AppComponent]
   })
