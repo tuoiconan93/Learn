@@ -4,33 +4,31 @@
   <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
     <img class="img-circle" width="80" src="assets/images/riekerlogo.png" alt="Logo Rieker">
   </a>
-  <ul class="nav navbar">
-    <li class="nav-item">
+  <ul class="nav navbar" >
+    <li class="nav-item"><a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a></li>
+    <li *ngIf="authenticated" class="nav-item">
       <a class="nav-link active" aria-current="page" routerLink="/order" routerLinkActive="active">Order</a>
     </li>
-    <li class="nav-item">
+    <li *ngIf="authenticated" class="nav-item">
       <a class="nav-link" routerLink="/service" routerLinkActive="active">Services</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown
-      </a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li>
-          <hr class="dropdown-divider">
-        </li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled">Disabled</a>
     </li>
   </ul>
 
-  <div class="col-md-3 text-end">
-    <button type="button" class="btn btn-outline-primary me-2">Login</button>
-    <button type="button" class="btn btn-outline-primary me-2">Sign-up</button>
+  <div class="col-md-3 me-5">
+    <div *ngIf="authenticated" class="btn-group dropdown-center">
+      <button type="button" class="btn btn-outline-dark">
+        {{ displayName|uppercase }}
+      </button>
+      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu text-center ">
+        <li class="nav-item"><a class="nav-link btn"  href="https://localhost:8443/realms/rieker/account/#/">My profile</a></li>
+        <hr class="dropdown-divider">
+        <li class="nav-item"><a class="nav-link btn" (click)="logout()"  >Logout</a></li>
+      </ul>
+    </div>
+    <button *ngIf="!authenticated" (click)="login()"  class="btn btn-outline-primary">Login</button>
+    
   </div>
 </header>

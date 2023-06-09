@@ -9,6 +9,7 @@ import { NeworderComponent } from './neworder/neworder.component';
 const routes: Routes = [
   { path: 'order', component: OrderComponent },
   { path: 'service', component: ServiceComponent },
+  { path: 'home', component: HomeComponent },
   { path: '', component: HomeComponent },
   { path: 'neworder', component: NeworderComponent },
   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
