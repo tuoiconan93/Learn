@@ -5,10 +5,10 @@ import Keycloak from 'keycloak-js';
   providedIn: 'root'
 })
 export class KeycloakService {
-  private keycloakAuth!: Keycloak.KeycloakInstance;
-  private authStatus:boolean=false;
+  private keycloakAuth!: Keycloak;
+  public isLoggedIn: boolean = false;
   constructor() {
-    this.keycloakAuth = {} as Keycloak.KeycloakInstance;
+    this.keycloakAuth = {} as Keycloak;
   }
   init(): Promise<any> {
     return new Promise<void>((resolve, reject) => {
@@ -20,13 +20,13 @@ export class KeycloakService {
   
       this.keycloakAuth = new Keycloak(config);
   
-      this.keycloakAuth.init({ onLoad: 'check-sso' }) // Thay đổi 'login-required' thành 'check-sso'
+      this.keycloakAuth.init({ onLoad: 'check-sso',flow:'standard' }) // Thay đổi 'login-required' thành 'check-sso'
         .then((authenticated) => {
+          this.isLoggedIn = authenticated;
           if (authenticated) {
             resolve();
+            
           } else {
-            // Xử lý trường hợp chưa xác thực
-            // Có thể không làm gì và resolve ngay lập tức
             resolve();
           }
         })
@@ -35,7 +35,10 @@ export class KeycloakService {
         });
     });
   }
-  
+  status(){
+    console.log('login',this.isLoggedIn);
+    
+  }
   login(): void {
     this.keycloakAuth.login();
   }
@@ -43,10 +46,9 @@ export class KeycloakService {
   logout(): void {
     this.keycloakAuth.logout();
   }
-
-  isAuthenticated(): boolean {
-    return this.keycloakAuth.authenticated??true ;   
-  }
+  // isAuthenticated(): boolean {
+  //   return this.keycloakAuth.authenticated??true ;   
+  // }
   getUserDisplayName(): Promise<string> {
     return new Promise<string>((resolve, reject) => {
       this.keycloakAuth.loadUserProfile()

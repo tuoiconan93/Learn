@@ -7,13 +7,13 @@ import { KeycloakService } from '../services/keycloak.service';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit{
-  authenticated:boolean=false
-
+  authenticated:boolean=false;
   constructor(private keycloakService: KeycloakService) { }
   displayName='';
   ngOnInit(): void {  
     this.keycloakService.init().then(() => {
-      this.authenticated = this.keycloakService.isAuthenticated();
+      // this.authenticated = this.keycloakService.isAuthenticated();
+      this.authenticated=this.keycloakService.isLoggedIn;
       if (this.authenticated) {
         this.keycloakService.getUserDisplayName().then((data) => {  
           this.displayName=data;
