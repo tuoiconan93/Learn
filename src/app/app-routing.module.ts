@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NeworderComponent } from './neworder/neworder.component';
 import { AuthGuard } from './auth.guard';
+// import { testGuard } from './test.guard';
 
 const routes: Routes = [
   { path: 'order', component: OrderComponent,canActivate: [AuthGuard] },
@@ -13,7 +14,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', component: HomeComponent },
   { path: 'neworder', component: NeworderComponent,canActivate: [AuthGuard] },
-  { path: '**', component: PageNotFoundComponent },  
+  { path: '**', component: PageNotFoundComponent},  
 ];
 
 @NgModule({
