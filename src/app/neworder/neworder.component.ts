@@ -29,7 +29,7 @@ export class NeworderComponent implements OnInit {
     Department: ['', Validators.required],
     From: ['', Validators.required],
     newSupplier: [''],
-    OrderDate: new FormControl(new Date().toLocaleString()),
+    OrderDate: new FormControl(new Date()),
     selectdate: [''],
     Notes:[''],
   });

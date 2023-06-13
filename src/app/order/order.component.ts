@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DatePipe } from '@angular/common';
 import {
   faBackwardFast,
   faBackwardStep,
@@ -9,6 +9,7 @@ import {
   faTrash,
   faSave,
   faRefresh,
+  faCancel,
 } from '@fortawesome/free-solid-svg-icons';
 import { HttpServerService } from '../services/http-server.service';
 import { FormBuilder, Validators } from '@angular/forms';
@@ -26,6 +27,8 @@ export class OrderComponent implements OnInit {
   public startitemshow: number=0;
   public enditemshow: number=0;
   public isDescending: boolean = true;
+  public datePipe = new DatePipe('en-US');
+  public originalOrderLists: any[] = [];
   faBackwardFast = faBackwardFast;
   faBackwardStep = faBackwardStep;
   faForwardFast = faForwardFast;
@@ -35,6 +38,7 @@ export class OrderComponent implements OnInit {
   faTrash=faTrash;
   faSave=faSave;
   faRefresh=faRefresh;
+  faCancel=faCancel;
   constructor( private getDataServer:HttpServerService, private formBuider: FormBuilder) {}
   public ngOnInit(): void {
     this.getOrderList();
@@ -43,7 +47,9 @@ export class OrderComponent implements OnInit {
     //get data tu service
     this.getDataServer.getdataAPI('OrderList').subscribe((data)=>{
       this.orderlists=data;
-      this.orderlists.sort((a, b) => b.id - a.id); 
+      this.orderlists.sort((a, b) => b.id - a.id);
+      this.orderlists = data;
+this.originalOrderLists = JSON.parse(JSON.stringify(data));
     });
   }
    //hien thi trang theo currenpage
@@ -164,42 +170,39 @@ export class OrderComponent implements OnInit {
     this.getOrderList();
       // Thực hiện các hành động phù hợp sau khi xóa thành công
   }
-// dùng driven form sẽ dùng reactive form sau
-edits: {
-  id: number;
-  ProductName: string;
-  Quality: number;
-  Notes: string;
-} = {
-  id: 0,
-  ProductName: '',
-  Quality: 0,
-  Notes: ''
-};
-  // phương thức edit
-  public editOrder(id: number): void {
-    const url = `OrderList/${id}`; // Đặt URL phù hợp với API của bạn
-    this.getDataServer.getdataAPI(url).subscribe((data) => {
-      // Gán dữ liệu lấy được từ API vào formEdit
-      this.edits = {
-        id: data.id,
-        ProductName: data.ProductName,
-        Quality: data.Quality,
-        Notes: data.Notes
+  
+  public editOrder(item: any): void {
+    item.DeliveryDate = this.datePipe.transform(item.DeliveryDate, 'MM/dd/yyyy');
+  }
+  public cancel(item: any) {
+    const initialItem = this.originalOrderLists.find((x) => x.id === item.id);
+    console.log('Trước khi gán:', initialItem.Quality);
+    console.log('Trước khi gán:', initialItem.id);
+    Object.assign(item,initialItem);
+    console.log('Sau khi gán:', item.Quality);
+    console.log('Sau khi gán:', item.id);
+  }
+  
+  
+  
+  //select today
+  public today(item: any): void{
+    item.DeliveryDate = new Date();
+  }
+//funtion update data
+  public saveChanges(item: any): void {
+      const payload = {
+        ProductName: item.ProductName, 
+        Quality: item.Quality,
+        Notes: item.Notes,
+        DeliveryDate: item.DeliveryDate,
       };
-    });
+      const url = `OrderList/${item.id}`;
+      this.getDataServer.editDataAPI(url, payload).subscribe(data => {
+        // Xử lý sau khi lưu thành công (nếu cần)
+      });
   }
-  //update dữ liệu chỉnh sửa gọi lại 
-  public updateData(): void {
-    // const payload = this.formEdit.value;
-    // const url = `OrderList/${this.formEdit.controls['id'].value}`; // Đặt URL phù hợp với API của bạn
-    const payload=this.edits;
-    const url=`OrderList/${this.edits.id}`;
-    // Gọi phương thức PUT hoặc PATCH để cập nhật dữ liệu
-    this.getDataServer.editDataAPI(url, payload).subscribe(data => {
-      // Thực hiện các hành động phù hợp sau khi cập nhật thành công 
-    });
-  }
+  
   public toggleEditingMode(order: any): void {
     order.editingMode = !order.editingMode;
   }
