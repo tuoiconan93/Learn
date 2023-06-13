@@ -48,8 +48,7 @@ export class OrderComponent implements OnInit {
     this.getDataServer.getdataAPI('OrderList').subscribe((data)=>{
       this.orderlists=data;
       this.orderlists.sort((a, b) => b.id - a.id);
-      this.orderlists = data;
-this.originalOrderLists = JSON.parse(JSON.stringify(data));
+      this.originalOrderLists = JSON.parse(JSON.stringify(data));
     });
   }
    //hien thi trang theo currenpage
@@ -176,11 +175,7 @@ this.originalOrderLists = JSON.parse(JSON.stringify(data));
   }
   public cancel(item: any) {
     const initialItem = this.originalOrderLists.find((x) => x.id === item.id);
-    console.log('Trước khi gán:', initialItem.Quality);
-    console.log('Trước khi gán:', initialItem.id);
     Object.assign(item,initialItem);
-    console.log('Sau khi gán:', item.Quality);
-    console.log('Sau khi gán:', item.id);
   }
   
   
