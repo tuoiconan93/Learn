@@ -111192,7 +111192,8 @@
       "Received": "Mr. Thai IT E",
       "Location": "Quang Nam",
       "From": "Phi Long",
-      "InvoiceNo": 12136
+      "InvoiceNo": 12136,
+      "DeliveryDate": "06/13/2023"
     },
     {
       "id": 7943,
@@ -111208,12 +111209,12 @@
       "Location": "Quang Nam",
       "From": "Sieu Thanh",
       "InvoiceNo": 546,
-      "DeliveryDate": "6/1/2023, 9:47:17 AM"
+      "DeliveryDate": "06/26/2023"
     },
     {
       "id": 7944,
       "ProductName": "CARTRIDGE HP LASERJET CF276A BLACK (FORM404DN/DW-MFP 428FDW) 123",
-      "Quality": 8,
+      "Quality": 14,
       " PriceVND ": 3290000,
       " TotalVND ": 6580000,
       "Total": 0,
@@ -111222,77 +111223,20 @@
       "PO": "20230412-13PL ",
       "Location": "Quang Nam",
       "From": "Phi Long",
-      "DeliveryDate": "06/17/2023"
-    },
-    {
-      "ProductName": "456334534534534",
-      "Quality": 10,
-      "PriceVND": "",
-      "TotalVND": "",
-      "Category": "Cartridge",
-      "Location": "Quang Ngai",
-      "Department": "1312312",
-      "From": "Phi Long",
-      "OrderDate": "6/12/2023, 3:10:58 PM",
-      "Notes": "ádfasfd",
-      "id": 7945,
-      "DeliveryDate": "2023-06-13T04:39:45.781Z"
-    },
-    {
-      "ProductName": "123789113123123123123",
-      "Quality": 9,
-      "PriceVND": "",
-      "TotalVND": "",
-      "Category": "Cartridge",
-      "Location": "Quang Nam",
-      "Department": "sfsdfsd",
-      "From": "Phi Long",
-      "OrderDate": "6/12/2023, 3:27:29 PM",
-      "Notes": "ádf",
-      "id": 7946,
       "DeliveryDate": "06/24/2023"
     },
     {
-      "ProductName": "12334324324324",
-      "Quality": 125,
+      "ProductName": "1313",
+      "Quality": 123123,
       "PriceVND": "",
       "TotalVND": "",
-      "Category": "Cartridge",
-      "Location": "Quang Ngai",
-      "Department": "13123",
-      "From": "Nguyen Ha",
-      "OrderDate": "7/25/2023",
-      "Notes": "ầdfasdf",
-      "id": 7947,
-      "DeliveryDate": "09/29/2023"
-    },
-    {
-      "ProductName": "2432432",
-      "Quality": 2,
-      "PriceVND": "",
-      "TotalVND": "",
-      "Category": "Batteries",
-      "Location": "Quang Ngai",
-      "Department": "werwer",
-      "From": "Sieu Thanh",
-      "OrderDate": "2023-06-13T03:04:47.647Z",
-      "Notes": "",
-      "id": 7948,
-      "DeliveryDate": "06/13/2023"
-    },
-    {
-      "ProductName": "132123123",
-      "Quality": 8,
-      "PriceVND": "",
-      "TotalVND": "",
-      "Category": "Cartridge",
+      "Category": "computer",
       "Location": "Quang Ngai",
       "Department": "ádf",
       "From": "Sieu Thanh",
-      "OrderDate": "2023-06-13T03:32:52.208Z",
+      "OrderDate": "2023-06-14T00:52:33.403Z",
       "Notes": "",
-      "id": 7949,
-      "DeliveryDate": "06/13/2023"
+      "id": 7945
     }
   ],
   "Services": [
