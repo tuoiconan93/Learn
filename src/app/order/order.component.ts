@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatePipe } from '@angular/common';
+import { KeycloakService } from '../services/keycloak.service';
 import {
   faBackwardFast,
   faBackwardStep,
@@ -39,9 +40,11 @@ export class OrderComponent implements OnInit {
   faSave=faSave;
   faRefresh=faRefresh;
   faCancel=faCancel;
-  constructor( private getDataServer:HttpServerService, private formBuider: FormBuilder) {}
+  supplier: any=[];
+  constructor( private getDataServer:HttpServerService, private formBuider: FormBuilder, private keycloakService: KeycloakService) {}
   public ngOnInit(): void {
     this.getOrderList();
+    this.getUserProfile();
   }
   public getOrderList(): void{
     //get data tu service
@@ -49,6 +52,9 @@ export class OrderComponent implements OnInit {
       this.orderlists=data;
       this.orderlists.sort((a, b) => b.id - a.id);
       this.originalOrderLists = JSON.parse(JSON.stringify(data));
+    });
+    this.getDataServer.getdataAPI('supplier').subscribe((data)=>{
+      this.supplier=data;
     });
   }
    //hien thi trang theo currenpage
@@ -161,17 +167,28 @@ export class OrderComponent implements OnInit {
   
   public editOrder(item: any): void {
     item.DeliveryDate = this.datePipe.transform(item.DeliveryDate, 'MM/dd/yyyy');
+    item.ReceivedDate = this.datePipe.transform(item.ReceivedDate, 'MM/dd/yyyy');
+    this.toggleEditingMode(item);
   }
   public cancel(item: any) {
     const initialItem = this.originalOrderLists.find((x) => x.id === item.id);
     Object.assign(item,initialItem);
+    this.toggleEditingMode(item);
   }
   
-  
-  
   //select today
-  public today(item: any): void{
-    item.DeliveryDate = new Date();
+  public today(item: any, property:string): void{
+    switch (property) {
+      case 'ReceivedDate':
+        item.ReceivedDate = new Date();
+        break;
+      case 'DeliveryDate':
+        item.DeliveryDate = new Date();;
+        break;
+      default:
+        break;
+    }
+    
   }
 //funtion update data
   public saveChanges(item: any): void {
@@ -179,15 +196,29 @@ export class OrderComponent implements OnInit {
         ProductName: item.ProductName, 
         Quality: item.Quality,
         Notes: item.Notes,
-        DeliveryDate: this.datePipe.transform(item.DeliveryDate, 'MM/dd/yyyy'),
+        DeliveryDate: item.DeliveryDate,
+        Editedby: this.userProfile.email,
+        ReceivedDate: item.ReceivedDate,
+        Received: item.Received,
+        PO: item.PO,
+        From: item.From,
+        EditedTime: new Date(),
       };
       const url = `OrderList/${item.id}`;
       this.getDataServer.editDataAPI(url, payload).subscribe(data => {
         // Xử lý sau khi lưu thành công (nếu cần)
       });
+      this.toggleEditingMode(item);
   }
-  
-  public toggleEditingMode(order: any): void {
-    order.editingMode = !order.editingMode;
+  userProfile: any={};
+  getUserProfile():void{
+    this.keycloakService.getUserProfile().then((data) => {  
+      this.userProfile=data;
+    }).catch((error) => {
+    
+    }); 
+  }
+  public toggleEditingMode(item: any): void {
+    item.editingMode = !item.editingMode;
   }
 }

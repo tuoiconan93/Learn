@@ -8,12 +8,15 @@ import {
   faChevronCircleLeft,
 } from '@fortawesome/free-solid-svg-icons';
 import { HttpServerService } from '../services/http-server.service';
+import { KeycloakService } from '../services/keycloak.service';
+import { DatePipe } from '@angular/common';
 @Component({
   selector: 'app-neworder',
   templateUrl: './neworder.component.html',
   styleUrls: ['./neworder.component.css'],
 })
 export class NeworderComponent implements OnInit {
+  public datePipe = new DatePipe('en-US');
   faSave = faSave;
   faCancel = faCancel;
   faX = faX;
@@ -29,7 +32,7 @@ export class NeworderComponent implements OnInit {
     Department: ['', Validators.required],
     From: ['', Validators.required],
     newSupplier: [''],
-    OrderDate: new FormControl(new Date()),
+    OrderDate: new FormControl( new Date()),
     selectdate: [''],
     Notes:[''],
   });
@@ -39,12 +42,13 @@ export class NeworderComponent implements OnInit {
   public location: string[] = [];
   constructor(
     private formBuider: FormBuilder,
-    private common: HttpServerService
+    private common: HttpServerService, private keycloakService : KeycloakService,
   ) {}
   ngOnInit(): void {
     this.getSupplier();
     this.Category = this.common.Category;
     this.location = this.common.location;
+    this.getUserProfile();
   }
   public onSubmit(): void {
     const payload = {
@@ -58,8 +62,17 @@ export class NeworderComponent implements OnInit {
       From: this.formOrder.controls['From'].value,
       OrderDate: this.formOrder.controls['OrderDate'].value,
       Notes: this.formOrder.controls['Notes'].value,
+      CreatedBy: this.userProfile.email,
     };
     this.common.postdataAPI('OrderList', payload).subscribe((data) => {});
+  }
+  userProfile: any={};
+  getUserProfile():void{
+    this.keycloakService.getUserProfile().then((data) => {  
+      this.userProfile=data;
+    }).catch((error) => {
+    
+    }); 
   }
   public onReset(): void {
     this.formOrder.reset();

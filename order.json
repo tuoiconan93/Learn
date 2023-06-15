@@ -111227,7 +111227,7 @@
     },
     {
       "ProductName": "1313",
-      "Quality": 123123,
+      "Quality": 2,
       "PriceVND": "",
       "TotalVND": "",
       "Category": "computer",
@@ -111236,7 +111236,45 @@
       "From": "Sieu Thanh",
       "OrderDate": "2023-06-14T00:52:33.403Z",
       "Notes": "",
-      "id": 7945
+      "id": 7945,
+      "DeliveryDate": "06/23/2023",
+      "Editedby": "l.tuoi@rieker.net",
+      "ReceivedDate": null,
+      "EditedTime": "2023-06-15T08:43:44.759Z"
+    },
+    {
+      "ProductName": "123",
+      "Quality": 123,
+      "PriceVND": "",
+      "TotalVND": "",
+      "Category": "Cartridge",
+      "Location": "Quang Ngai",
+      "Department": "23432434",
+      "From": "Sieu Thanh",
+      "OrderDate": "2023-06-15T04:58:45.195Z",
+      "Notes": "",
+      "id": 7946
+    },
+    {
+      "ProductName": "12323432434",
+      "Quality": 3,
+      "PriceVND": "",
+      "TotalVND": "",
+      "Category": "Cartridge",
+      "Location": "Quang Ngai",
+      "Department": "fsdfds",
+      "From": "Nguyen Ha",
+      "OrderDate": "2023-06-15T05:00:58.859Z",
+      "Notes": "",
+      "CteatedBy": "hoang@gmail.com",
+      "id": 7947,
+      "DeliveryDate": "06/15/2023",
+      "Editby": "hoang@gmail.com",
+      "Editedby": "hoang@gmail.com",
+      "ReceivedDate": "06/13/2023",
+      "Received": "Mr. Thái",
+      "PO": "20230412-13PL",
+      "EditedTime": "2023-06-15T08:55:51.575Z"
     }
   ],
   "Services": [

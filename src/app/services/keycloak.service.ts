@@ -49,16 +49,23 @@ export class KeycloakService {
   // isAuthenticated(): boolean {
   //   return this.keycloakAuth.authenticated??true ;   
   // }
-  getUserDisplayName(): Promise<string> {
-    return new Promise<string>((resolve, reject) => {
+  getUserProfile(): Promise<any> {
+    return new Promise<any>((resolve, reject) => {
       this.keycloakAuth.loadUserProfile()
         .then((profile) => {
-          resolve(profile.firstName + ' ' + profile.lastName);
+          const userProfile = {
+            displayName: profile.firstName + ' ' + profile.lastName,
+            email: profile.email,
+            firstname: profile.firstName,
+            lastname: profile.lastName,
+          };
+          resolve(userProfile);
         })
         .catch((error) => {
           reject(error);
         });
     });
+
   }
   
   
