@@ -111275,6 +111275,20 @@
       "Received": "Mr. Thái",
       "PO": "20230412-13PL",
       "EditedTime": "2023-06-15T08:55:51.575Z"
+    },
+    {
+      "ProductName": "123",
+      "Quality": 23123,
+      "PriceVND": "",
+      "TotalVND": "",
+      "Category": "computer",
+      "Location": "Quang Nam",
+      "Department": "adasd",
+      "From": "Phi Long",
+      "OrderDate": "2023-06-16T01:58:35.480Z",
+      "Notes": "",
+      "CreatedBy": "hoang@gmail.com",
+      "id": 7948
     }
   ],
   "Services": [
