@@ -21,13 +21,9 @@
     "@fortawesome/angular-fontawesome": "^0.13.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@ng-bootstrap/ng-bootstrap": "^15.0.0",
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.2.3",
     "keycloak-angular": "^14.0.0",
     "keycloak-js": "^21.1.1",
     "moment": "^2.29.4",
-    "ngx-bootstrap": "^10.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

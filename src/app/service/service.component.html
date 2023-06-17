@@ -9,8 +9,7 @@
                     </div>
                     <div class="float-end">
                         <label class="" for="">Search:&nbsp;</label>
-                        <input class="input-group w-50 d-inline" type="text" [(ngModel)]="search" placeholder="keyword"
-                            [ngModelOptions]="{standalone: true}">
+                        <input class="input-group w-50 d-inline" type="text" [(ngModel)]="search" placeholder="keyword">
                     </div>
                 </div>
             </div>
@@ -106,7 +105,7 @@
                 <div class="float-end d-flex align-items-center">
                     <label for="">Display:&nbsp;</label>
                     <select class="form-select form-select-sm" name="" id="pageSize" [(ngModel)]="pagesize"
-                      (ngModelChange)="repaginate()" [value]="pagesize" [ngModelOptions]="{standalone: true}">
+                      (ngModelChange)="repaginate()" [value]="pagesize">
                       <option value="50">50</option>
                       <option value="100">100</option>
                       <option value="200">200</option>
