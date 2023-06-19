@@ -17,6 +17,8 @@
   import { HttpServerService } from './services/http-server.service';
   import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   import { KeycloakService } from './services/keycloak.service';
+  import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+
   @NgModule({
     declarations: [
       AppComponent,
@@ -38,6 +40,8 @@
       ReactiveFormsModule,
       BrowserAnimationsModule,
       // KeycloakAngularModule,
+      BsDatepickerModule.forRoot(),
+
   
     ],
     providers: [
