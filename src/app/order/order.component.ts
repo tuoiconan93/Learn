@@ -176,20 +176,6 @@ export class OrderComponent implements OnInit {
     this.toggleEditingMode(item);
   }
   
-  //select today
-  public today(item: any, property:string): void{
-    switch (property) {
-      case 'ReceivedDate':
-        item.ReceivedDate = new Date();
-        break;
-      case 'DeliveryDate':
-        item.DeliveryDate = new Date();;
-        break;
-      default:
-        break;
-    }
-    
-  }
 //funtion update data
   public saveChanges(item: any): void {
       const payload = {

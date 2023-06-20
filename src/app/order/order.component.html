@@ -110,8 +110,7 @@
             <td>
               <div *ngIf="!item.editingMode">{{item.DeliveryDate | date:'MM/dd/yyyy'}}</div>
               <div *ngIf="item.editingMode"class="d-flex d-inline">
-                <input class="form-control" [style.width]="'7rem'"  bsDatepicker [(ngModel)]="item.DeliveryDate">
-                <a class="btn btn-info" (click)="today(item,'DeliveryDate')">Today</a>
+                <input class="form-control" [style.width]="'7rem'"  bsDatepicker [(ngModel)]="item.DeliveryDate" [bsConfig]="{ containerClass: 'theme-dark-blue', showTodayButton: true, todayPosition: 'center' }" placeholder="Select Date">
               </div>
             </td>
             <td class="text-capitalize">{{item.Category}}</td>
@@ -125,8 +124,7 @@
             <td>
               <div *ngIf="!item.editingMode"> {{item.ReceivedDate | date:'MM/dd/yyyy'}}</div>
               <div *ngIf="item.editingMode"class="d-flex d-inline">
-                <input class="form-control" [style.width]="'7rem'"  bsDatepicker [(ngModel)]="item.ReceivedDate">
-                <a class="btn btn-info" (click)="today(item,'ReceivedDate')">Today</a>
+                <input class="form-control" [style.width]="'7rem'"  bsDatepicker [(ngModel)]="item.ReceivedDate" [bsConfig]="{ containerClass: 'theme-dark-blue', showTodayButton: true, todayPosition: 'center' }" placeholder="Select Date">
               </div>
              </td>
             <td>

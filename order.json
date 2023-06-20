@@ -111288,7 +111288,11 @@
       "OrderDate": "2023-06-16T01:58:35.480Z",
       "Notes": "",
       "CreatedBy": "hoang@gmail.com",
-      "id": 7948
+      "id": 7948,
+      "DeliveryDate": "2023-06-19T03:48:42.156Z",
+      "Editedby": "hoang@gmail.com",
+      "ReceivedDate": "2023-06-19T03:47:05.337Z",
+      "EditedTime": "2023-06-19T03:48:44.395Z"
     }
   ],
   "Services": [
