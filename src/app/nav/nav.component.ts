@@ -8,6 +8,7 @@ import { KeycloakService } from '../services/keycloak.service';
 })
 export class NavComponent implements OnInit{
   authenticated:boolean=false;
+  showConsole: boolean=false;
   constructor(private keycloakService: KeycloakService) { }
   displayName='';
   ngOnInit(): void {
@@ -31,6 +32,11 @@ export class NavComponent implements OnInit{
   }
   getUserGroups(): void {
     this.userGroup = this.keycloakService.getUserGroups();
+    if (this.userGroup.includes('console')) {
+      this.showConsole = true;
+    } else {
+      this.showConsole = false;
+    }
   }
   login(): void {
     // this.keycloakService.init();

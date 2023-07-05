@@ -12,7 +12,7 @@
         <li class="nav-item">
           <a class="nav-link text-primary" routerLink="/home" routerLinkActive="active">Home</a>
         </li>
-        <li *ngIf="authenticated" class="nav-item">
+        <li *ngIf="showConsole" class="nav-item">
           <a class="nav-link text-primary" aria-current="page" routerLink="/order" routerLinkActive="active">Order</a>
         </li>
         <li *ngIf="authenticated" class="nav-item">
