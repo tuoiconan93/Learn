@@ -67,6 +67,8 @@ export class KeycloakService {
     });
 
   }
-  
-  
+getUserGroups(): string[] {
+    const realmAccess = this.keycloakAuth.tokenParsed?.realm_access;
+    return realmAccess?.roles ?? [];
+  }
 }

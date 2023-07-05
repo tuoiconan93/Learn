@@ -6,10 +6,11 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NeworderComponent } from './neworder/neworder.component';
 import { AuthGuard } from './auth.guard';
+import { ConsoleGuard } from './console.guard';
 // import { testGuard } from './test.guard';
 
 const routes: Routes = [
-  { path: 'order', component: OrderComponent,canActivate: [AuthGuard] },
+  { path: 'order', component: OrderComponent,canActivate: [ConsoleGuard] },
   { path: 'service', component: ServiceComponent ,canActivate: [AuthGuard]},
   { path: 'home', component: HomeComponent },
   { path: '', component: HomeComponent },

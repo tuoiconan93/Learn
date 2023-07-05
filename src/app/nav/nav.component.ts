@@ -16,16 +16,21 @@ export class NavComponent implements OnInit{
       this.authenticated=this.keycloakService.isLoggedIn;
       if (this.authenticated) {
         this.getUserProfile();
+        this.getUserGroups();
       }
     });
   }
   userProfile: any={};
+  userGroup: any={};
   getUserProfile():void{
     this.keycloakService.getUserProfile().then((data) => {  
       this.userProfile=data;    
     }).catch((error) => {
     
     });
+  }
+  getUserGroups(): void {
+    this.userGroup = this.keycloakService.getUserGroups();
   }
   login(): void {
     // this.keycloakService.init();
